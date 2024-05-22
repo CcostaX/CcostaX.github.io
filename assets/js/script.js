@@ -157,3 +157,14 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+var toggleInfoLinks = document.getElementsByClassName('toggle-info');
+var projectList = document.getElementById('project-list')
+var projectDetail = document.getElementById('project-details')
+for (var i = 0; i < toggleInfoLinks.length; i++) {
+  toggleInfoLinks[i].addEventListener('click', function(e) {
+    e.preventDefault();
+    projectList.style.display = "none";
+    projectDetail.style.display = "block";
+  });
+}

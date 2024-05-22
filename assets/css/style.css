@@ -354,6 +354,10 @@ main {
   border-radius: 8px;
 }
 
+.title.titleWork {
+  margin-bottom: 20px; /* Adjust this value as needed */
+}
+
 .info_more-btn {
   position: absolute;
   top: -15px;
@@ -785,7 +789,7 @@ main {
   margin-left: 45px;
 }
 
-.timeline-item { position: relative; }
+.timeline-item { position: relative; padding-bottom: 25px;}
 
 .timeline-item:not(:last-child) { margin-bottom: 20px; }
 
@@ -1879,4 +1883,49 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+}
+
+
+  /**
+	 * MY CSS
+	 */
+.listItems{
+  color: white;
+  padding-left: 16px;
+  padding-bottom: 10px;
+}
+
+.listItemsURL{
+  color: var(--orange-yellow-crayola);
+  padding-left: 20px;
+}
+
+.projectTextTitle{
+  color: white;
+  padding-left: 10px;
+  padding-top: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.projectText{
+  color: white;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.project-category-detail{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.full-width-iframe {
+  width: 75%;
+  height: 300px;
+}
+
+.centered-container{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
 }
