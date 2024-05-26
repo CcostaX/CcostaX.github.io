@@ -66,8 +66,8 @@
   transition: background-color 0.6s ease;
 }
 
-.unique-dot:hover, .unique-dot.active {
-    background-color: #717171;
+.dot:hover, .dot.active {
+  background-color: #717171;
 }
 
 /* Fading animation */
