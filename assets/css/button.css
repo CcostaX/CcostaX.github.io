@@ -1,0 +1,13 @@
+.previous {
+    background-color: var(--border-gradient-onyx);
+    color: var(--orange-yellow-crayola);
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+.previous:hover {
+    background-color: var(--orange-yellow-crayola);
+    color: white;
+}
+

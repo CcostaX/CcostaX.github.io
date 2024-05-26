@@ -1909,9 +1909,19 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .projectText{
-  color: white;
   padding-left: 10px;
-  padding-top: 10px;
+  color: white;
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 2.2;
+}
+
+.projectTextItems{
+  padding-left: 20px;
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 2;
 }
 
 .project-category-detail{
@@ -1929,3 +1939,4 @@ textarea.form-input::-webkit-resizer { display: none; }
   justify-content: center;
   padding-bottom: 20px;
 }
+

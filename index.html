@@ -16,7 +16,8 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
-
+  <link rel="stylesheet" href="./assets/css/slide.css">
+  <link rel="stylesheet" href="./assets/css/button.css">
   <!--
     - google font link
   -->
@@ -257,7 +258,7 @@
                 <img src="./assets/images/icon-design.svg" alt="Design App Icon" width="40">
               </div>
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photoshop and Video Editing Expertise</h4>
+                <h4 class="h4 service-item-title">Photoshop and Video Editing</h4>
                 <p class="service-item-text">
                   Developing skills in Photoshop (GIMP) and video editing (Sony Vegas) as a hobby.
                 </p>
@@ -566,7 +567,7 @@
 
               <div class="title-wrapper">
                 <h5 class="h5">Unity Multiplayer - Relay and Photon Engine</h5>
-                <data value="90">75%</data>
+                <data value="70">70%</data>
               </div>
 
               <div class="skill-progress-bg">
@@ -698,7 +699,7 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>My projects (Unity)</button>
+              <button data-filter-btn>My projects</button>
             </li>
 
             <li class="filter-item">
@@ -744,7 +745,7 @@
           <ul id="project-list" class="project-list">
 
             <li class="project-item  active" data-filter-item data-category="work projects">
-              <a href="#">
+              <a href="#" id="toggle-info-ARUAV">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -756,13 +757,13 @@
 
                 <h3 class="project-title">UAV Augmented Reality management using mobile devices</h3>
 
-                <p class="project-category">Unity Mobile 3D AR (Mobile)</p>
+                <p class="project-category">Unity 3D AR (Mobile)</p>
 
               </a>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="work projects">
-              <a href="#">
+              <a href="#" id="toggle-info-Web">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -780,7 +781,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="my projects (unity)">
-              <a href="#">
+              <a href="#" id="toggle-info-Dimensions">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -798,7 +799,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="my projects (unity)">
-              <a href="#">
+              <a href="#" id="toggle-info-Nutricao">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -816,7 +817,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="school projects">
-              <a href="" class="toggle-info">
+              <a href="" id="toggle-info-DefendYourCastleAR">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -835,7 +836,7 @@
 
             
             <li class="project-item  active" data-filter-item data-category="school projects">
-              <a href="#">
+              <a href="#" id="toggle-info-SimpleLand">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -851,21 +852,439 @@
 
               </a>
             </li>
-
-           
-
           </ul>
 
-          <div id="project-details" style="display: none;">
-            <div id="project-details-SimpleLand" class="project-details-item">
+
+          <div id="project-details">
+            <!-- ARUAV -->
+            <div id="project-details-ARUAV" class="project-details-item" style="display: none;">
+              <a href="#" class="previous previousPortfolio">&laquo; Previous</a>
+
+              <h1 class="projectTextTitle">UAV Augmented Reality management using mobile devices</h1>
+              <p class="project-category project-category-detail">Unity 3D AR (Mobile)</p>
+              <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="./assets/images/DefendYourCastle_cover.png" style="width:100%">
+                  <div class="text">Caption Text</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="./assets/images/DefendYourCastle_cover.png" style="width:100%">
+                  <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="./assets/images/DefendYourCastle_cover.png" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>         
+              </div>
+              <br>     
+              <div style="text-align:center">
+                <span class="unique-dot dot" onclick="currentSlide(1)"></span> 
+                <span class="unique-dot dot" onclick="currentSlide(2)"></span> 
+                <span class="unique-dot dot" onclick="currentSlide(3)"></span> 
+              </div>
+              <br>
+              <p class="projectText" style="color: white">
+                <strong>
+                  This study presents a Digital Twin (DT) Augmented Reality (AR) system for UAVs (drones)
+                  that enables users to visualize, control, and retrieve both virtual and real
+                  UAVs for wildfire prevention and monitoring through a mobile device. The
+                  proposed DT-based mobile application leverages Augmented Reality 
+                  and includes four key services: UAV Flight Data Generator, Visualization,
+                  Control, and Retrieval. To facilitate the deployment of UAVs, 
+                  GPS coordinates were used to regulate their positioning and movement.     
+                  This method allows users to test and train UAV control in a virtual 
+                  environment before moving to real-world scenarios, reducing risks and costs.                
+                </strong>                          
+              </p>
+              <br>
+              <p class="projectText">
+                <strong>Project Paper: (In Progress) </strong>           
+              </p>
+              <br>
+              <hr>
+              <br>
+              <p class="projectText"> <b> The proposed DT system leads to the following contributions: </b> </p>
+              <p class="projectTextItems">
+                • Digital Twin-based mobile application to visualize, control and retrieve UAVs using AR; <br>
+                • Autonomous UAV data attribution and movement using external UAV data for real-time remote visualization; <br>
+                • Virtual environment for users to test and train UAV control without risks; <br>
+                • Implementation of UAVs’ DT to operate in real environments. <br>
+                • Hybrid approach to allow the combination of real and virtual environments. <br>
+                • Integration with a web application and Gazebo simulator for UAV management (Websockets). <br>
+              <br><br>
+              <p class="projectText"> <b> This application contains the following developed features: </b></p>
+              <p class="projectTextItems">
+                • Augmented Reality (AR) visualization of UAVs along with their associated information.<br>
+                • A comprehensive list of UAVs, both virtual and real, for management and selection.<br>
+                • Multiple commands for managing real UAVs efficiently.<br>
+                • Manual control of UAVs using joysticks for directional movement and rotation.<br>
+                • Live visualization of the UAV's camera feed.<br>
+                • Integration with a map displaying the user's location.<br>
+                • Identification and retrieval of UAVs experiencing low battery or other status issues.<br>
+              </p>
+              <br><br>
+            </div>
+
+            <!-- WEB -->
+            <div id="project-details-Web" class="project-details-item" style="display: none;">
+              <a href="#" class="previous previousPortfolio">&laquo; Previous</a>
+
+              <h1 class="projectTextTitle">UAV Augmented Reality Management using Web application</h1>
+              <p class="project-category project-category-detail">Web Development</p>
+              <br><br>
+              <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="./assets/images/DefendYourCastle_cover.png" style="width:100%">
+                  <div class="text">Caption Text</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="./assets/images/DefendYourCastle_cover.png" style="width:100%">
+                  <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="./assets/images/DefendYourCastle_cover.png" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>         
+              </div>
+              <br>     
+              <div style="text-align:center">
+                <span class="unique-dot dot" onclick="currentSlide(1)"></span> 
+                <span class="unique-dot dot" onclick="currentSlide(2)"></span> 
+                <span class="unique-dot dot" onclick="currentSlide(3)"></span> 
+              </div>
+              <br>
+              <p class="projectText" style="color: white">
+                <strong>
+                  This study presents a Digital Twin (DT) Web system for UAVs (drones)
+                  that enables users to visualize, control, and mission planner for both virtual and real
+                  UAVs for wildfire prevention and monitoring through a mobile device. The
+                  proposed DT-based web application includes four key services: UAV Flight Data Generator, Visualization,
+                  Control, and autonomous movement through GPS coordinates. To facilitate the deployment of UAVs, 
+                  GPS coordinates were used to regulate their positioning and movement.     
+                  This method allows users to test and train UAV control in a virtual 
+                  environment before moving to real-world scenarios, reducing risks and costs.                
+                </strong>                          
+              </p>
+              <br>
+              <p class="projectText">
+                <strong>Project Paper Published: </strong>
+                <a class="listItemsURL" href="https://ieeexplore.ieee.org/document/10452716" class="social-link">
+                  https://ieeexplore.ieee.org/document/10452716
+                </a>
+              </p>
+              <br>
+              <p class="projectText"> <b> The proposed DT system leads to the following contributions: </b> </p>
+              <p class="projectTextItems">
+                • Digital Twin-based web application to visualize, control and mission planer UAVs using Google Maps API; <br>
+                • Autonomous UAV data attribution and movement using external UAV data for real-time remote visualization; <br>
+                • Virtual environment for users to test and train UAV control without risks; <br>
+                • Hybrid approach to allow the combination of real and virtual environments. <br>
+                • Integration with Gazebo simulator for UAV management (Websockets). <br>
+              <br><br>
+              <p class="projectText"> <b> This application contains the following developed features: </b></p>
+              <p class="projectTextItems">
+                • Drone Markers (using Google Maps API) for visualization of UAVs along with their associated information.<br>
+                • A comprehensive list of UAVs, both virtual and real, for management and selection.<br>
+                • Multiple commands for managing real UAVs efficiently.<br>
+                • Manual control of UAVs using the key arrows for directional movement<br>
+                • Live visualization of the UAV's camera feed.<br>
+                • Autonomous Movement in a certain area using virtual and real UAVs<br>
+              </p>
+              <br><br>
+            </div>
+            <!-- DIMENSIONS -->
+            <div id="project-details-Dimensions" class="project-details-item" style="display: none;">
+              <a href="#" class="previous previousPortfolio">&laquo; Previous</a>
+
+              <h1 class="projectTextTitle">Dimensions</h1>
+              <p class="project-category project-category-detail">Unity 2D and 3D (PC)</p>
+              <div class="centered-container">
+                <iframe class="full-width-iframe" src="https://www.youtube.com/watch?v=-0xTZODNRhQ&t=56s"></iframe>
+              </div>
+              <br>
+              <p class="projectText" style="color: white">
+                <strong>
+                    This personal project aims to explore a novel concept by combining 2D and 3D elements in a single game. 
+                    The player controls two characters: one can manipulate 2D physical objects, while the other can handle 3D physical objects. 
+                    The main goal is to solve puzzles and defeat enemies to progress through the game. 
+                    These puzzles require both characters to work together, using both 2D and 3D objects to succeed.
+                </strong>                          
+              </p>
+              <br>
+              <p class="projectText"><b> Each character can only move objects of a specific color: </b></p>
+              <p class="projectTextItems">
+                  • Blue - 2D Physics and Objects <br>
+                  • Green - 3D Physics and Objects <br>
+              </p>
+              <br>
+              <p class="projectText"><b> The game includes: </b></p>
+              <p class="projectTextItems">
+                  • 2D and 3D dimensions (the camera perspective changes depending on the character currently in use) <br>
+                  • Puzzle-solving and enemy combat <br>
+                  • Abilities such as jumping, dashing, attacking, and moving blocks <br>
+              </p>
+              <br><br>
+              <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="./assets/images/DefendYourCastle_cover.png" style="width:100%">
+                  <div class="text">Caption Text</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="./assets/images/DefendYourCastle_cover.png" style="width:100%">
+                  <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="./assets/images/DefendYourCastle_cover.png" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>           
+              </div>
+              <br>        
+              <div style="text-align:center">
+                <span class="unique-dot dot" onclick="currentSlide(1)"></span> 
+                <span class="unique-dot dot" onclick="currentSlide(2)"></span> 
+                <span class="unique-dot dot" onclick="currentSlide(3)"></span> 
+              </div>
+            </div>
+            <!-- MISSAO NUTRITIVA -->
+            <div id="project-details-Nutricao" class="project-details-item" style="display: none;">
+              <a href="#" class="previous previousPortfolio">&laquo; Previous</a>
+
+              <h1 class="projectTextTitle">Missão Nutritiva</h1>
+              <p class="project-category project-category-detail">Unity 2D (Mobile)</p>
+              <div class="centered-container">
+                <iframe class="full-width-iframe" src="https://www.youtube.com/watch?v=-0xTZODNRhQ&t=56s"></iframe>
+              </div>
+              <br>
+              <p class="projectText" style="color: white">
+                <strong>
+                  This project is a mobile augmented reality game (for Android or iOS) where players build their own castle and aim to destroy the enemy's castle. The player who successfully destroys the opponent's castle wins.   
+                </strong>                          
+              </p>
+              <br>
+              <p class="projectText">
+                <strong>Project Paper Published: </strong>
+                <a class="listItemsURL" href="https://ieeexplore.ieee.org/document/10452716" class="social-link">
+                  https://ieeexplore.ieee.org/document/10452716
+                </a>
+              </p>
+              <br>
+              <p class="projectText"> <b> The main game contains multiple phases: </b> </p>
+              <p class="projectTextItems">
+                - In the first phase, the player must build their castle with two blocks in height and four blocks in length on each of the four sides.<br>
+                - In the second phase, both players have a limited number of cannons to place on their castle walls.<br>
+                - The third phase involves a timed confrontation where players fire cannons at each other's castles within a time limit.<br>
+                - In the fourth phase, players must rebuild their castles to close any openings within a set time limit (reducing each time). Phases 3 and 4 repeat until one player is unable to close their castle, resulting in their defeat.<br>
+              </p>
+              <br><br>
+              <p class="projectText"> <b> This games contains the following developed features: </b></p>
+              <p class="projectTextItems">
+                - Main Game (Multiplayer - 2 players)<br>
+                - Creative (Unlimited block placement and shooting practice)<br>
+                - Tutorial (Step-by-step learning of game phases)<br>
+                - Shop (Earn coins in the main game to customize your castle layout)<br>
+              </p>
+              <br><br>
+              <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="./assets/images/DefendYourCastle_cover.png" style="width:100%">
+                  <div class="text">Caption Text</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="./assets/images/DefendYourCastle_cover.png" style="width:100%">
+                  <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="./assets/images/DefendYourCastle_cover.png" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>             
+              </div>
+              <br>
+              
+              <div style="text-align:center">
+                <span class="unique-dot dot" onclick="currentSlide(1)"></span> 
+                <span class="unique-dot dot" onclick="currentSlide(2)"></span> 
+                <span class="unique-dot dot" onclick="currentSlide(3)"></span> 
+              </div>
+            </div>
+            
+            <!-- SIMPLE LAND -->
+            <div id="project-details-SimpleLand" class="project-details-item" style="display: none;">
+              <a href="#" class="previous previousPortfolio">&laquo; Previous</a>
+
               <h1 class="projectTextTitle">Simple Land</h1>
               <p class="project-category project-category-detail">Unity 2D Multiplayer (Mobile)</p>
               <div class="centered-container">
-                <iframe class="full-width-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                <iframe class="full-width-iframe" src="https://www.youtube.com/watch?v=-0xTZODNRhQ&t=56s"></iframe>
               </div>
-              <p class="projectText">Unity 2D Multiplayer (Mobile)</p>
+              <br>
+              <p class="projectText" style="color: white">
+                <strong>
+                  This project is a mobile augmented reality game (for Android or iOS) where players build their own castle and aim to destroy the enemy's castle. The player who successfully destroys the opponent's castle wins.   
+                </strong>                          
+              </p>
+              <br>
+              <p class="projectText">
+                <strong>Project Paper Published: </strong>
+                <a class="listItemsURL" href="https://ieeexplore.ieee.org/document/10452716" class="social-link">
+                  https://ieeexplore.ieee.org/document/10452716
+                </a>
+              </p>
+              <br>
+              <p class="projectText"> <b> The main game contains multiple phases: </b> </p>
+              <p class="projectTextItems">
+                - In the first phase, the player must build their castle with two blocks in height and four blocks in length on each of the four sides.<br>
+                - In the second phase, both players have a limited number of cannons to place on their castle walls.<br>
+                - The third phase involves a timed confrontation where players fire cannons at each other's castles within a time limit.<br>
+                - In the fourth phase, players must rebuild their castles to close any openings within a set time limit (reducing each time). Phases 3 and 4 repeat until one player is unable to close their castle, resulting in their defeat.<br>
+              </p>
+              <br><br>
+              <p class="projectText"> <b> This games contains the following developed features: </b></p>
+              <p class="projectTextItems">
+                - Main Game (Multiplayer - 2 players)<br>
+                - Creative (Unlimited block placement and shooting practice)<br>
+                - Tutorial (Step-by-step learning of game phases)<br>
+                - Shop (Earn coins in the main game to customize your castle layout)<br>
+              </p>
+              <br><br>
+              <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="./assets/images/DefendYourCastle_cover.png" style="width:100%">
+                  <div class="text">Caption Text</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="./assets/images/DefendYourCastle_cover.png" style="width:100%">
+                  <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="./assets/images/DefendYourCastle_cover.png" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>               
+              </div>
+              <br>
+              
+              <div style="text-align:center">
+                <span class="unique-dot dot" onclick="currentSlide(1)"></span> 
+                <span class="unique-dot dot" onclick="currentSlide(2)"></span> 
+                <span class="unique-dot dot" onclick="currentSlide(3)"></span> 
+              </div>
+            </div>
+
+            <!-- DEFEND YOUR CASTLE AR-->
+            <div id="project-details-DefendYourCastleAR" class="project-details-item" style="display: none;">
+              <a href="#" class="previous previousPortfolio">&laquo; Previous</a>
+              
+              <h1 class="projectTextTitle">Defend Your Castle AR</h1>
+              <p class="project-category project-category-detail">Unity 3D AR (Mobile)</p>
+              <div class="centered-container">
+                <iframe class="full-width-iframe" src="https://www.youtube.com/watch?v=-0xTZODNRhQ&t=56s"></iframe>
+              </div>
+              <br>
+              <p class="projectText" style="color: white">
+                <strong>
+                  This project is a mobile augmented reality game (for Android or iOS) where players build their own castle and aim to destroy the enemy's castle. The player who successfully destroys the opponent's castle wins.   
+                </strong>                          
+              </p>
+              <br>
+              <p class="projectText">
+                <strong>Project Paper Published: </strong>
+                <a class="listItemsURL" href="https://ieeexplore.ieee.org/document/10452716" class="social-link">
+                  https://ieeexplore.ieee.org/document/10452716
+                </a>
+              </p>
+              <br>
+              <hr>
+              <br>
+              <p class="projectText"> <b> The main game contains multiple phases: </b> </p>
+              <p class="projectTextItems">
+                • In the first phase, the player must build their castle with two blocks in height and four blocks in length on each of the four sides.<br>
+                • In the second phase, both players have a limited number of cannons to place on their castle walls.<br>
+                • The third phase involves a timed confrontation where players fire cannons at each other's castles within a time limit.<br>
+                • In the fourth phase, players must rebuild their castles to close any openings within a set time limit (reducing each time). Phases 3 and 4 repeat until one player is unable to close their castle, resulting in their defeat.<br>
+              </p>
+              <br><br>
+              <p class="projectText"> <b> This games contains the following developed features: </b></p>
+              <p class="projectTextItems">
+                • Main Game (Multiplayer - 2 players)<br>
+                • Creative (Unlimited block placement and shooting practice)<br>
+                • Tutorial (Step-by-step learning of game phases)<br>
+                • Shop (Earn coins in the main game to customize your castle layout)<br>
+              </p>
+              <br><br>
+              <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="./assets/images/DefendYourCastle_cover.png" style="width:100%">
+                  <div class="text">Caption Text</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="./assets/images/DefendYourCastle_cover.png" style="width:100%">
+                  <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="./assets/images/DefendYourCastle_cover.png" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+              </div>
+              <br>
+              
+              <div style="text-align:center">
+                <span class="unique-dot dot" onclick="currentSlide(1)"></span> 
+                <span class="unique-dot dot" onclick="currentSlide(2)"></span> 
+                <span class="unique-dot dot" onclick="currentSlide(3)"></span> 
+              </div>
             </div>
           </div>
+        </div>
+
+        
 
         </section>
 
@@ -1123,6 +1542,7 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/slide.js"></script>
 
   <!--
     - ionicon link

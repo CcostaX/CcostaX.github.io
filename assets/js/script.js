@@ -158,13 +158,48 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-var toggleInfoLinks = document.getElementsByClassName('toggle-info');
 var projectList = document.getElementById('project-list')
-var projectDetail = document.getElementById('project-details')
-for (var i = 0; i < toggleInfoLinks.length; i++) {
-  toggleInfoLinks[i].addEventListener('click', function(e) {
-    e.preventDefault();
-    projectList.style.display = "none";
-    projectDetail.style.display = "block";
+var previousButtons = document.getElementsByClassName('previousPortfolio');
+
+function hideProjectDetails(projectIds) {
+  projectIds.forEach(function(projectId) {
+    document.getElementById(projectId).style.display = "none";
   });
 }
+
+function showProjectDetails(projectId) {
+  document.getElementById(projectId).style.display = "block";
+}
+
+//Back Button
+for (var i = 0; i < previousButtons.length; i++) {
+  previousButtons[i].addEventListener('click', function(e) {
+    e.preventDefault();
+    projectList.style.display = "grid";
+    hideProjectDetails([
+      'project-details-DefendYourCastleAR', 
+      'project-details-SimpleLand', 
+      'project-details-Nutricao',
+      'project-details-Dimensions',
+      'project-details-Web',
+      'project-details-ARUAV',
+    ]);
+  });
+}
+
+function addClickListener(projectId) {
+  var projectElement = document.getElementById('toggle-info-' + projectId);
+  projectElement.addEventListener('click', function(e) {
+    e.preventDefault();
+    projectList.style.display = "none";
+    showProjectDetails('project-details-' + projectId);
+  });
+}
+
+// Usage
+addClickListener('DefendYourCastleAR');
+addClickListener('SimpleLand');
+addClickListener('Nutricao');
+addClickListener('Dimensions');
+addClickListener('Web');
+addClickListener('ARUAV');
