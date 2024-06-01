@@ -1,6 +1,6 @@
 let slideIndex = 1;
-showSlides(slideIndex, "mySlides_ARUAV");
-showSlides(slideIndex, "mySlides_WEB");
+//showSlides(slideIndex, "mySlides_ARUAV");
+//showSlides(slideIndex, "mySlides_WEB");
 showSlides(slideIndex, "mySlides_DIMENSIONS");
 showSlides(slideIndex, "mySlides_NUTRITION");
 showSlides(slideIndex, "mySlides_DEFENDYOURCASTLEAR");
