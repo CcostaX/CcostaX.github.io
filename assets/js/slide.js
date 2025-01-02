@@ -1,10 +1,11 @@
 let slideIndex = 1;
-//showSlides(slideIndex, "mySlides_ARUAV");
-//showSlides(slideIndex, "mySlides_WEB");
+showSlides(slideIndex, "mySlides_ARUAV");
+showSlides(slideIndex, "mySlides_WEB");
 showSlides(slideIndex, "mySlides_DIMENSIONS");
 showSlides(slideIndex, "mySlides_NUTRITION");
 showSlides(slideIndex, "mySlides_DEFENDYOURCASTLEAR");
 showSlides(slideIndex, "mySlides_SIMPLELAND");
+showSlides(slideIndex, "mySlides_SHADOW");
 
 function plusSlides(n, name) {
   slideIndex += n;

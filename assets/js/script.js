@@ -180,6 +180,7 @@ for (var i = 0; i < previousButtons.length; i++) {
       'project-details-DefendYourCastleAR', 
       'project-details-SimpleLand', 
       'project-details-Nutricao',
+      'project-details-Shadow',
       'project-details-Dimensions',
       'project-details-Web',
       'project-details-ARUAV',
@@ -203,3 +204,4 @@ addClickListener('Nutricao');
 addClickListener('Dimensions');
 addClickListener('Web');
 addClickListener('ARUAV');
+addClickListener('Shadow');
