@@ -184,6 +184,10 @@ for (var i = 0; i < previousButtons.length; i++) {
       'project-details-Dimensions',
       'project-details-Web',
       'project-details-ARUAV',
+      'project-details-Moocs',
+      'project-details-Chatbot',
+      'project-details-Virtualization',
+      'project-details-Training',
     ]);
   });
 }
@@ -193,6 +197,8 @@ function addClickListener(projectId) {
   projectElement.addEventListener('click', function(e) {
     e.preventDefault();
     projectList.style.display = "none";
+    console.log(projectId)
+
     showProjectDetails('project-details-' + projectId);
   });
 }
@@ -205,3 +211,7 @@ addClickListener('Dimensions');
 addClickListener('Web');
 addClickListener('ARUAV');
 addClickListener('Shadow');
+addClickListener('Moocs');
+addClickListener('Chatbot');
+addClickListener('Virtualization');
+addClickListener('Training');

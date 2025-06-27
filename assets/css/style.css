@@ -492,7 +492,13 @@ main {
 .navbar-link.active { color: var(--orange-yellow-crayola); }
 
 
+.section {
+  display: none;
+}
 
+.section.active {
+  display: block;
+}
 
 
 /*-----------------------------------*\
@@ -557,6 +563,10 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
   line-height: 1.6;
+}
+
+.service-list li:first-child {
+  grid-column: span 2; /* O primeiro item ocupa 2 colunas */
 }
 
 
