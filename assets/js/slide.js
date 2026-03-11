@@ -1,5 +1,7 @@
 let slideIndices = {
   ARUAV: 1,
+  ARMVC: 1,
+  Terraformcloud: 1,
   WEB: 1,
   DIMENSIONS: 1,
   NUTRITION: 1,
@@ -9,7 +11,9 @@ let slideIndices = {
   MOOCS: 1,
   CHATBOT: 1,
   TRAINING: 1,
-  VIRTUALIZATION: 1
+  VIRTUALIZATION: 1,
+  MERN: 1,
+  CLINICAL: 1,
 };
 
 // Mostrar todos os slides inicialmente

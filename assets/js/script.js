@@ -58,7 +58,7 @@ overlay.addEventListener("click", testimonialsModalFunc);
 // custom select variables
 const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-selecct-value]");
+const selectValue = document.querySelector("[data-select-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
 select.addEventListener("click", function () { elementToggleFunc(this); });
@@ -188,6 +188,10 @@ for (var i = 0; i < previousButtons.length; i++) {
       'project-details-Chatbot',
       'project-details-Virtualization',
       'project-details-Training',
+      'project-details-ARMVC',
+      'project-details-TerraformCloud',
+      'project-details-MERN',
+      'project-details-Clinical',
     ]);
   });
 }
@@ -215,3 +219,7 @@ addClickListener('Moocs');
 addClickListener('Chatbot');
 addClickListener('Virtualization');
 addClickListener('Training');
+addClickListener('ARMVC');
+addClickListener('TerraformCloud');
+addClickListener('MERN');
+addClickListener('Clinical');

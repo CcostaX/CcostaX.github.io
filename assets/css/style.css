@@ -1991,3 +1991,28 @@ th{
   display: table;
   clear: both;
 }
+
+.dashboard_image{
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Garante que a lista principal tenha bullets e espaçamento */
+.main-list {
+  list-style-type: disc !important;
+  margin-top: 15px;
+}
+
+/* Estiliza os sub-itens com um recuo maior e um círculo vazio */
+.sub-list {
+  list-style-type: circle !important;
+  padding-left: 30px !important;
+  margin-bottom: 5px;
+  color: #ccc; /* Uma cor levemente diferente para destacar */
+}
+
+.projectTextItems li {
+  margin-bottom: 8px; /* Espaço entre cada item */
+  line-height: 1.6;
+}
