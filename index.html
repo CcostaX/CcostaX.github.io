@@ -1,2313 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carlos Costa - Personal Portfolio</title>
-
-  <!--
-    - favicon
-  -->
+  <title>Carlos Costa - Portfolio</title>
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/slide.css">
-  <link rel="stylesheet" href="./assets/css/button.css">
-  <!--
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
 <body>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/me.jpg" alt="Carlos Costa" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Carlos Costa">Carlos Costa</h1>
-
-          <p class="title titleWork">Computer Engineering</p>
-          <p class="title titleWork" style="margin-top: 10px;" >Game Programmer</p>
-          <p class="title titleWork" style="margin-top: 10px;" >VR/AR Programmer</p>
-          <p class="title titleWork" style="margin-top: 10px;">Video Editor</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">CC</a>
+      <div class="nav-menu" id="navMenu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="carlos.cost142@gmail.com" class="contact-link">carlos.cost142@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+351919495155" class="contact-link">+351 919495155</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">March 13, 1999</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Coimbra, Portugal</address>
-              <address>Lisbon, Portugal</address>
-              <address>Leiria, Portugal</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/carloscosta99/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://x.com/ValKnightX" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://ccostax.itch.io/" class="social-link">
-              <ion-icon name="game-controller-outline"></ion-icon>
-            </a>
-          </li>
-        </ul>
-
+      <div class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-
-    </aside>
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-        </ul>
-      </nav>
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p> Hi! My name is Carlos. My current role, <b>currently 6 months of experience (updated: September 2025),</b> involves <b>video editing</b>, as well as <b>developing applications that integrate VR/AR/AI technologies</b>, continually expanding my expertise in both fields. </p>
-          <p> In my previous role, I accumulated <b> 2 years of experience </b> in developing <b>mobile applications</b>, including <b>games and digital twin technologies using mobile devices</b>. I am particularly passionate about <b>gaming</b> and have undertaken several personal projects using <b>Unity</b>. These projects span across <b>2D, 3D, AR, mobile, and educational applications</b>, demonstrating my versatility and enthusiasm for game development. </p>
-          <p> I have a <b>Bachelor's degree in Computer Engineering</b> and <b>Master's degree in Computer Engineering with a focus on Mobile Computing</b>, I am confident in my ability to contribute effectively to your team. </p>
-          <p> I’m also enthusiastic about <b>video editing and production</b> , including color correction, audio, transitions, visual effects, lighting, and framing. Currently, I took an online course in high-quality video production to enhance my skills, adding to what I’ve learned through self-study. </p>
-          <p> Thank you for your time!!! </p>
-
-          <h>
-          <hr>
-          <br>
-          <h5>Skills: </p>
-          <p> Unity, Unity2D, Unity3D, Unity Multiplayer, Photon, Relay, Augmented Reality, Virtual Reality, Vuforia, ARcore, Digital Twin, Artificial Intelligence, HeyGen, Synthesia, C, C#, Javascript, Java, Python, HTML, CSS, TypeScript, PHP, SQL, MySQL, MongoDB, Full-stack developer, Front-end developer, git, websockets, vue.js, niantic studio (8th wall), visual studio, visual studio code, photoshop, vegas pro, capcut, davinci resolve, adobe after effects, image editing, video editing, video producer, video effects.</p>
-        </section>
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">      
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="Mobile App Icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title"> Video Editor, Web Developer, VR/AR Developer</h4> <br>
-                <p class="service-item-text"> . <b>Video Editor:</b> Creation of presentation videos, AI-enhanced content (e.g., avatars, animated text), product demonstrations, and promotional materials. </p> <br>
-                <p class="service-item-text"> . <b>VR/AR Developer:</b> Development of augmented reality application for enhanced workplace training; Development of a Digital Twin XR system that enables users to interact with virtual and real equipment through virtual elements (e.g., using VR/AR glasses to control and monitor objects, virtual environment for training, and real environment for user engagement and help). </p> <br>
-                <p class="service-item-text"> . <b>Web Developer:</b> Design and development of custom Massive Open Online Courses (MOOCs) with videos and quizzes, and personalized learning features; Creation a chatbot capable of responding to course-specific questions, using text-to-speech, speaking avatars, and integrated quiz functionality. </p>
-              </div>
-            </li>        
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/console.png" alt="Game Development Icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Game Development</h4>
-                <p class="service-item-text"> <br>    
-                  Implementation of games using Unity for both PC and mobile platforms, including 2D and 3D games, multiplayer, serious games, augmented reality.
-                </p>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-quote.svg" alt="Design App Icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Courses</h4> <br>
-                <p class="service-item-text"> . Build A Multiplayer Augmented Reality (AR) Game With Unity - UDEMY</p> <br>
-                <p class="service-item-text"> . The Complete Java Certification Course - UDEMY</p> <br>
-                <p class="service-item-text"> . Unreal Engine 5 C++ The Ultimate Game Development Course - UDEMY </p> <br> 
-                <p class="service-item-text"> . GUSTAFILM Lab MasterClass</p>
-              </div>
-            </li>
-
-
-          </ul>
-
-        </section>
-
-        <!--
-          - testimonials
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title></h4>
-
-              <time datetime="2021-06-14"></time>
-
-              <div data-modal-text>
-                <p>
-
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Courses and Certificates</h3>
-          <br>
-          <ul>
-            <li class="listItems">. RUN- European University Programmes
-              <a class="listItemsURL" href="https://run-eu.eu/" target="_blank"> - View RUN-EU Website</a>
-              <a class="listItemsURL" href="https://run-eu.eu/2023/10/06/yes-solving-wicked-problems-through-design-based-education/" target="_blank"> - Solving Wicked Problems Through Design Based Education (Amsterdam)</a>
-              <a class="listItemsURL" href="https://run-eu.eu/2023/06/07/sap-living-playground-in-finland/" target="_blank"> - Living Playground in Finland (Finland)</a>
-            </li>
-            <li class="listItems">. Build A Multiplayer Augmented Reality (AR) Game With Unity - 2022 (Udemy)
-              <a class="listItemsURL" href="https://www.udemy.com/course/build-multiplayer-augmented-reality-ar-games-with-photon/?couponCode=LEADERSALE24B" target="_blank"> - View Course Website</a>
-            </li>
-            <li class="listItems">. The Complete Java Certification Course (Udemy)
-              <a class="listItemsURL" href="https://www.udemy.com/share/101Wly3@3rYtudmJA0SKqWlDxJS53am-6_PKt1K1LRv_Ca2LM7P4Fe6hfRUDVIZBY2-JPKmW9w==/" target="_blank"> - View Course Website</a>
-            </li>
-            <li class="listItems">. GUSTAFILM Lab Masterclass
-              <a class="listItemsURL" href="https://gustafilmlab.com/" target="_blank"> - View Course Website</a>
-            </li>
-            <li class="listItems">. Certificate of participation in the Hackaton 100% In competition Ipleiria - 2022 (1st place)
-              <a class="listItemsURL" href="https://hackathon.ipleiria.pt/" target="_blank"> - View Website</a>              
-              <a class="listItemsURL" href="https://www.facebook.com/watch/?v=2391209017810768" target="_blank"> - Watch Video - Hackathon 2019 Video </a>
-              <a class="listItemsURL" href="https://www.youtube.com/watch?v=H5WIQJzHnjw&ab_channel=ValKnight" target="_blank"> - Watch Video - Our Project Video Idea</a>
-            </li>
-          </ul>  
-        </section>
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Multimedia and Programmer</h4>
-              <span>January 2025 - Current</span>
-              <p class="timeline-text"> CTCV - Centro Tecnológico da Cerâmica e do Vidro </p>
-              <p class="timeline-text"> <strong>Roles: </strong> Video Editor | Web Developer | VR/AR Developer </p>
-            </li>
-
-            <li class="timeline-item">  
-              <h4 class="h4 timeline-item-title">Game Developer</h4>
-              <span>October 2024 (1 month)</span>
-              <p class="timeline-text"> ONTOP Studios </p>
-              <p class="timeline-text"> <strong>Roles: </strong> AR Web & Mobile Games Developer – Niantic (8th Wall) </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Research Fellow</h4>
-              <span>2022 — 2024 (2 years)</span>
-              <p class="timeline-text"> Polytechnic University of Leiria - School of Technology and Management (ESTG)</p>
-              <p class="timeline-text"> <strong>Roles: </strong> AR & Digital Twin Mobile Developer</p>
-              <p class="timeline-text">
-                <strong>Project Name: </strong> DBoidS - Digital twin Boids fire prevention System
-                <a class="listItemsURL" href="https://sciproj.ptcris.pt/171663PRJ" class="social-link">
-                  10.54499/PTDC/CCI-COM/2416/2021
-                </a>
-              </p>
-              <p class="timeline-text">
-                <strong>Project paper Published: </strong>
-                <a class="listItemsURL" href="https://link.springer.com/article/10.1007/s10055-025-01145-w" class="social-link">
-                  https://link.springer.com/article/10.1007/s10055-025-01145-w
-                </a>
-              </p>
-
-            </li>
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Master's Degree in Computer Engineering – Mobile Computing</h4>
-
-              <span>2022 — 2024 (2 years)</span>
-
-              <p class="timeline-text">
-                Polytechnic University of Leiria - School of Technology and Management (ESTG)
-              </p>
-              <p class="timeline-text">
-                - Final Grade: 18
-              </p>
-              <p class="timeline-text">
-                - Final Theses Grade: 18
-              </p>
-              <p class="timeline-text">
-                <strong>Project paper Published: </strong> Augmented reality mobile digital twin for unmanned aerial vehicle wildfire prevention
-                <a class="listItemsURL" href="https://link.springer.com/article/10.1007/s10055-025-01145-w" class="social-link">
-                  https://link.springer.com/article/10.1007/s10055-025-01145-w
-                </a>
-              </p>
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Bachelor’s degree in Computer Engineering</h4>
-
-              <span>2019 — 2022 (3 years)</span>
-
-              <p class="timeline-text">
-                Polytechnic University of Leiria - School of Technology and Management (ESTG)
-              </p>
-
-              <p class="timeline-text">
-                - Final Grade: 15
-              </p>
-
-              <p class="timeline-text">
-                - Final Project Grade: 18
-              </p>
-              <p class="timeline-text">
-                <strong>Project Paper Published: </strong> Defend Your Castle – A Mobile Augmented Reality Multiplayer Game
-                <a class="listItemsURL" href="https://ieeexplore.ieee.org/document/10452716" class="social-link">
-                  https://ieeexplore.ieee.org/document/10452716
-                </a>
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">TESP - Information Systems Programming</h4>
-
-              <span>2017 — 2019 (2 years)</span>
-
-              <p class="timeline-text">
-                Polytechnic University of Leiria - School of Technology and Management (ESTG)
-              </p>
-
-              <p class="timeline-text">
-                - Final Grade: 15
-              </p>
-
-              <p class="timeline-text">
-                - Internship at InCentea (year 2019, duration 4 months): 18
-              </p>
-            </li>
-          </ol>
-        </section>
-
-        <section class="skill">
-          <h3 class="h3 skills-title">My skills</h3>
-          <ul class="skills-list content-card">
-            <div class="row">
-              <li class="skills-item column">
-                <div class="title-wrapper">
-                  <h5 class="h5">✦ <b> Game Development and AR:</b> Unity (2D/3D), Unity
-                    Multiplayer (Photon, Relay), Niantic Studio (8th
-                    Wall), Augmented Reality (Vuforia, ARCore)</h5>
-                </div>
-              </li>
-              <li class="skills-item column">
-                <div class="title-wrapper">
-                  <h5 class="h5">✦ <b> Image and Video Editing:</b> Gimp (Photoshop),
-                    Video Editing (Capcut,Vegas Pro, Davinci Resolve,
-                    Adobe After Effects)
-                    </h5>
-                </div>
-              </li>   
-              <li class="skills-item column">
-                <div class="title-wrapper">
-                  <h5 class="h5">✦ <b> Web Development:</b> HTML, CSS, JavaScript,
-                    PHP, TypeScript, Vue.js, Websockets, SQL
-                    </h5>
-                </div>
-              </li>
-              <li class="skills-item column">
-                <div class="title-wrapper">
-                  <h5 class="h5">✦ <b> Progamming:</b> Java, Javascript, C, C#, Python</h5>
-                </div>
-              </li>
-              <li class="skills-item column">
-                <div class="title-wrapper">
-                  <h5 class="h5">✦ <b> Development Tools:</b> Visual Studio, Visual
-                    Studio Code, Eclipse
-                    </h5>
-                </div>
-              </li>  
-              <li class="skills-item column">
-                <div class="title-wrapper">
-                  <h5 class="h5">✦ <b> Version Control:</b> Git</h5>
-                </div>
-              </li>    
-            </div>
-            <br>
-          </ul>
-          
-          <h3 class="h3 skills-title" style="padding-top: 50px; text-align: center">Language Skills</h3>
-          <div class="tableSkills">
-            <table>
-                <tr>
-                  <th>Languages</th>
-                  <th>Listening comprehension</th>
-                  <th>Reading</th>
-                  <th>Oral Production</th>
-                  <th>Oral Interaction</th>
-                  <th>Writing</th>
-                </tr>
-                <tr>
-                  <td>English</td>
-                  <td>C1</td>
-                  <td>C1</td>
-                  <td>B2</td>
-                  <td>B2</td>
-                  <td>C1</td>
-                </tr>
-                <tr>
-                  <td>French</td>
-                  <td>A1</td>
-                  <td>A1+</td>
-                  <td>A1+</td>
-                  <td>A1</td>
-                  <td>A1</td>
-                </tr>
-            </table>
-          </div>
-
-          <p class="projectText" style="text-align: center; padding-top: 10px;"> Driver License: B and B1</p>
-        </section>
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-            <li class="filter-item"> <button class="active" data-filter-btn>All</button> </li>
-            <li class="filter-item"> <button data-filter-btn>VR/AR Projects</button> </li>
-            <li class="filter-item"> <button data-filter-btn>Game Development</button> </li>
-            <li class="filter-item"> <button data-filter-btn>AI Projects</button> </li>
-            <li class="filter-item"> <button data-filter-btn>FullStack / Web Apps </button> </li>
-            <li class="filter-item"> <button data-filter-btn>Video Creator</button> </li>
-          </ul>
-
-          <div class="filter-select-box">
-            <button class="filter-select" data-select>
-              <div class="select-value" data-select-value>Select category</div>
-              <div class="select-icon"> <ion-icon name="chevron-down"></ion-icon> </div>
-            </button>
-            <ul class="select-list">
-              <li class="select-item"> <button data-select-item>All</button> </li>
-              <li class="select-item"> <button data-select-item>VR/AR Projects</button> </li>
-              <li class="select-item"> <button data-select-item>Game Development</button> </li>
-              <li class="select-item"> <button data-select-item>AI Projects</button> </li>
-              <li class="select-item"> <button data-select-item>FullStack / Web Apps</button> </li>
-              <li class="select-item"> <button data-select-item>Video Creator</button> </li>
-            </ul>
-          </div>
-
-          <ul id="project-list" class="project-list">
-
-             <!---------------------------------- WORK PROJECTS ---------------------------------->
-            <li class="project-item  active" data-filter-item data-category="vr/ar projects">
-              <a href="#" id="toggle-info-ARUAV">
-
-                <figure class="project-img dashboard_image">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/near_mode_real.png" alt="uav-mobile" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">UAV Augmented Reality management using mobile devices</h3>
-
-                <p class="project-category">Unity 3D AR (Mobile)</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="vr/ar projects">
-              <a href="#" id="toggle-info-ARMVC">
-
-                <figure class="project-img dashboard_image">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/armvc_cover.png" alt="uav-web" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Augmented Reality Multi-Vehicle Controller Service​ (ARMVC)</h3>
-
-                <p class="project-category">Swift | iOS Development | Unity (AR Mobile)
-                </p>
-                
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="fullstack / web apps">
-              <a href="#" id="toggle-info-TerraformCloud">
-
-                <figure class="project-img dashboard_image">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/terraform_cloud3.png" alt="uav-web" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">4 In a Line Multiplayer</h3>
-
-                <p class="project-category">Web Development (Terraform | Docker)
-                </p>
-                
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="fullstack / web apps">
-              <a href="#" id="toggle-info-Clinical">
-
-                <figure class="project-img dashboard_image">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/clinical_intro.png" alt="uav-web" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Clinical Management System</h3>
-
-                <p class="project-category">Web Development (NUXT | Java | Docker)
-                </p>
-                
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="fullstack / web apps">
-              <a href="#" id="toggle-info-MERN">
-
-                <figure class="project-img dashboard_image">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/MERN_1.png" alt="uav-web" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">E-Commerce (MERN STACK Study)</h3>
-
-                <p class="project-category">Web Development (MERN)
-                </p>
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="fullstack / web apps">
-              <a href="#" id="toggle-info-Web">
-
-                <figure class="project-img dashboard_image">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/web_missionplanner.png" alt="uav-web" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">UAV Augmented Reality Management using Web Application</h3>
-
-                <p class="project-category">Web Development</p>
-                
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="fullstack / web apps">
-              <a href="#" id="toggle-info-Moocs">
-
-                <figure class="project-img dashboard_image">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/mooc_cover.png" alt="moocs" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Creation of MOOCs </h3>
-
-                <p class="project-category">Video Editing (HeyGen, Capcut), Web Development (Moodle)</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="ai projects">
-              <a href="#" id="toggle-info-Chatbot">
-
-                <figure class="project-img dashboard_image">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/chatbot_cover.png" alt="chatbot" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">ChatBot AI</h3>
-
-                <p class="project-category">Web Development (HuggingFaces)</p>
-
-              </a>
-            </li>
-            
-            <li class="project-item  active" data-filter-item data-category="vr/ar projects">
-              <a href="#" id="toggle-info-Virtualization">
-
-                <figure class="project-img dashboard_image">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/industrinity1.png" alt="virtualization" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Industrinity AR </h3>
-
-                <p class="project-category">Unity 3D VR/AR </p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="vr/ar projects">
-              <a href="#" id="toggle-info-Training">
-
-                <figure class="project-img dashboard_image">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/arta_1.png" alt="training" loading="lazy">
-                </figure>
-
-                <h3 class="project-title"> Augmented Reality Training Application </h3>
-
-                <p class="project-category">Unity 3D PC/AR (Mobile)</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="game development">
-              <a href="#" id="toggle-info-Dimensions">
-
-                <figure class="project-img dashboard_image">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/dimensions_cover.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Dimensions</h3>
-
-                <p class="project-category">Unity 2D and 3D (PC)</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="game development">
-              <a href="#" id="toggle-info-Nutricao">
-
-                <figure class="project-img dashboard_image">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/missaonutritiva_cover.jpg" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Missão Nutritiva</h3>
-
-                <p class="project-category">Unity 2D (Mobile)</p>
-
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="game development">
-              <a href="#" id="toggle-info-Shadow">
-
-                <figure class="project-img dashboard_image">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/shadow_cover.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Shadow (OnlyUp)</h3>
-
-                <p class="project-category">Unity 3D (PC)</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="vr/ar projects">
-              <a href="" id="toggle-info-DefendYourCastleAR">
-
-                <figure class="project-img dashboard_image">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/DefendYourCastle_cover.png" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Defend Your Castle AR</h3>
-
-                <p class="project-category">Unity 3D AR (Mobile)</p>
-
-              </a>
-            </li>
-
-            
-            <li class="project-item  active" data-filter-item data-category="game development">
-              <a href="#" id="toggle-info-SimpleLand">
-
-                <figure class="project-img dashboard_image">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/SimpleLand_cover.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Simple Land</h3>
-
-                <p class="project-category">Unity 2D Multiplayer (Mobile)</p>
-
-              </a>
-            </li>
-          </ul>
-
-
-
-
-          
-           <!-- (PROJECT DETAILS)-->
-
-          <div id="project-details">
-            <!---------------------------------- ARUAV ---------------------------------->
-            <div id="project-details-ARUAV" class="project-details-item" style="display: none;">
-              <a href="#" class="previous previousPortfolio">&laquo; Previous</a>
-
-              <h1 class="projectTextTitle">UAV Augmented Reality management using mobile devices</h1>
-              <p class="project-category project-category-detail">Unity 3D AR (Mobile)</p>
-              <div class="centered-container">
-                <iframe class="full-width-iframe" src="https://www.youtube.com/embed/DEEiWg01ZJw?si=XVulSF56yUDR_HAP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-           
-              <br>
-              <p class="timeline-text" style="padding-left: 10px;">
-                <strong>Project Name: </strong> DBoidS - Digital twin Boids fire prevention System
-                <a class="listItemsURL" href="https://sciproj.ptcris.pt/171663PRJ" class="social-link">
-                  10.54499/PTDC/CCI-COM/2416/2021
-                </a>
-              </p>
-              <br>
-              <p class="projectText" style="color: white">
-                <strong>
-                  This study presents a Digital Twin (DT) Augmented Reality (AR) system for UAVs (drones)
-                  that enables users to visualize, control, and retrieve both virtual and real
-                  UAVs for wildfire prevention and monitoring through a mobile device. The
-                  proposed DT-based mobile application leverages Augmented Reality 
-                  and includes four key services: UAV Flight Data Generator, Visualization,
-                  Control, and Retrieval. To facilitate the deployment of UAVs, 
-                  GPS coordinates were used to regulate their positioning and movement.     
-                  This method allows users to test and train UAV control in a virtual 
-                  environment before moving to real-world scenarios, reducing risks and costs.                
-                </strong>                          
-              </p>
-              <br>
-              <p class="projectText">
-                <strong>Project Paper Published: </strong>
-                <a class="listItemsURL" href="https://link.springer.com/article/10.1007/s10055-025-01145-w" class="social-link">
-                  https://link.springer.com/article/10.1007/s10055-025-01145-w
-                </a>         
-              </p>
-              <br>
-              <hr>
-              <br>
-              <p class="projectText"> <b> The proposed DT system leads to the following contributions: </b> </p>
-              <p class="projectTextItems">
-                • Digital Twin-based mobile application to visualize, control and retrieve UAVs using AR; <br>
-                • Autonomous UAV data attribution and movement using external UAV data for real-time remote visualization; <br>
-                • Virtual environment for users to test and train UAV control without risks; <br>
-                • Implementation of UAVs’ DT to operate in real environments; <br>
-                • Hybrid approach to allow the combination of real and virtual environments; <br>
-                • Integration with a web application and Gazebo simulator for UAV management (Websockets). <br>
-              <br><br>
-              <p class="projectText"> <b> This application contains the following developed features: </b></p>
-              <p class="projectTextItems">
-                • Augmented Reality (AR) visualization of UAVs along with their associated information;<br>
-                • A comprehensive list of UAVs, both virtual and real, for management and selection;<br>
-                • Multiple commands for managing real UAVs efficiently;<br>
-                • Manual control of UAVs using joysticks for directional movement and rotation;<br>
-                • Live visualization of the UAV's camera feed;<br>
-                • Integration with a map displaying the user's location;<br>
-                • Identification and retrieval of UAVs experiencing low battery or other status issues.<br>
-              </p>
-              <br><br>
-              <div class="slideshow-container">
-                <div class="mySlides_ARUAV fade">
-                  <div class="numbertext">1 / 6</div>
-                  <img src="./assets/images/near_mode_real.png" style="width:100%">
-                  <div class="text">UAV Visualization</div>
-                </div>
-                
-                <div class="mySlides_ARUAV fade">
-                  <div class="numbertext">2 / 6</div>
-                  <img src="./assets/images/manualControl.png" style="width:100%">
-                  <div class="text">UAV Control</div>
-                </div>
-                
-                <div class="mySlides_ARUAV fade">
-                  <div class="numbertext">3 / 6</div>
-                  <img src="./assets/images/list_uavs.png" style="width:100%">
-                  <div class="text">List of UAVs</div>
-                </div>
-                
-                <div class="mySlides_ARUAV fade">
-                  <div class="numbertext">4 / 6</div>
-                  <img src="./assets/images/retrieveOption.png" style="width:100%">
-                  <div class="text">UAV Retrieval</div> 
-                </div>
-
-                <div class="mySlides_ARUAV fade">
-                  <div class="numbertext">5 / 6</div>
-                  <img src="./assets/images/camera_real.png" style="width:100%">
-                  <div class="text">UAV camera feed</div>
-                </div>
-
-                <div class="mySlides_ARUAV fade">
-                  <div class="numbertext">6 / 6</div>
-                  <img src="./assets/images/camera_real2.png" style="width:100%">
-                  <div class="text">UAV camera feed</div>
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1, 'ARUAV')">❮</a>
-                <a class="next" onclick="plusSlides(1, 'ARUAV')">❯</a>         
-              </div>
-              <br>     
-              <div style="text-align:center">
-                <span class="dot-mySlides_ARUAV dot" onclick="currentSlide(1, 'ARUAV')"></span> 
-                <span class="dot-mySlides_ARUAV dot" onclick="currentSlide(2, 'ARUAV')"></span> 
-                <span class="dot-mySlides_ARUAV dot" onclick="currentSlide(3, 'ARUAV')"></span> 
-                <span class="dot-mySlides_ARUAV dot" onclick="currentSlide(4, 'ARUAV')"></span> 
-                <span class="dot-mySlides_ARUAV dot" onclick="currentSlide(5, 'ARUAV')"></span> 
-                <span class="dot-mySlides_ARUAV dot" onclick="currentSlide(6, 'ARUAV')"></span> 
-              </div>
-            </div>
-
-
-
-
-
-            <!---------------------------------- ARMVC ---------------------------------->
-            <div id="project-details-ARMVC" class="project-details-item" style="display: none;">
-              <a href="#" class="previous previousPortfolio">&laquo; Previous</a>
-
-              <h1 class="projectTextTitle">Augmented Reality Multi-Vehicle Controller Service​ (ARMVC)</h1>
-              <p class="project-category project-category-detail">Swift | iOS Development | Unity (AR Mobile)</p>
-              <div class="centered-container">
-                <iframe class="full-width-iframe" src="https://www.youtube.com/embed/_-TK_3bxZwI?si=0v6yVoAZ_QRT-fJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-
-              <br>
-              <p class="projectText" style="color: white">
-                <strong>
-                  The manual control of unmanned aerial, terrestrial or marine or vehicles is a very common activity today.
-                  However, the control of multiple vehicles at the same time is a complex task that requires a high level of skill and attention from the operator. 
-                  In this context, the use of augmented reality (AR) can be a valuable tool to enhance the operator's situational awareness and improve the control of multiple vehicles. 
-                </strong>                          
-              </p>
-              <br>
-              <p class="projectText" style="color: white">
-                <strong>
-                  This project presents an Augmented Reality Multi-Vehicle Controller Service (ARMVC) that allows users to control multiple unmanned vehicles simultaneously using a mobile device with AR. 
-                  Includes a virtual environment for users to test and train UAV control without risks, and a real environment for users to control real vehicles using joysticks and other commands. 
-                  The ARMVC system is designed to be user-friendly and intuitive, allowing users to easily visualize and control multiple vehicles in real-time.    
-                </strong>                          
-              </p>
-              
-              <br>
-              <br>
-              <hr>
-              <br>
-              <p class="projectText"> <b> The proposed system has the following features: </b> </p>
-              <p class="projectTextItems">
-                • Create and manage user accounts <br>
-                • Manage user vehicles<br>
-                • Manage and visualize the details of a specific vehicle;<br>
-                • Manual control of UVs (Unmanned Vehicles) and UAVs (Unmanned Aerial Vehicles) in real/simulated scenarios through the mobile application; <br>
-                • Vehicle registration and control authorization mechanism through Augmented Reality <br>
-                • Administration Web application <br>
-              <br><br>
-              <div class="slideshow-container">
-                <div class="mySlides_ARMVC fade">
-                  <div class="numbertext">1 / 8</div>
-                  <img src="./assets/images/ARMVC_real3.png" style="width:100%">
-                  <div class="text">Real UAV management </div>
-                </div>
-                
-                <div class="mySlides_ARMVC fade">
-                  <div class="numbertext">2 / 8</div>
-                  <img src="./assets/images/ARMVC_virtual2.png" style="width:75%; display: block; margin: auto;">
-                  <div class="text">Virtual UAV management</div>
-                </div>
-                
-                <div class="mySlides_ARMVC fade">
-                  <div class="numbertext">3 / 8</div>
-                  <img src="./assets/images/ARMVC_real4.png" style="width:100%">
-                  <div class="text">Real UV management</div>
-                </div>
-                
-                <div class="mySlides_ARMVC fade">
-                  <div class="numbertext">4 / 8</div>
-                  <img src="./assets/images/ARMVC_virtual.png" style="width:100%">
-                  <div class="text">Virtual UV management</div> 
-                </div>
-
-                <div class="mySlides_ARMVC fade">
-                  <div class="numbertext">5 / 8</div>
-                  <img src="./assets/images/ARMVC_login.png" style="width:100%">
-                  <div class="text">Login/Register</div>
-                </div>
-
-                <div class="mySlides_ARMVC fade">
-                  <div class="numbertext">6 / 8</div>
-                  <img src="./assets/images/ARMVC_dashboard.png" style="width:100%">
-                  <div class="text">Dashboard (List of vehicles)</div>
-                </div>
-
-                <div class="mySlides_ARMVC fade">
-                  <div class="numbertext">7 / 8</div>
-                  <img src="./assets/images/ARMVC_dashboard2.png" style="width:100%; ">
-                  <div class="text">Dashboard (Vehicle Details)</div>
-                </div>
-
-                <div class="mySlides_ARMVC fade">
-                  <div class="numbertext">8 / 8</div>
-                  <img src="./assets/images/ARMVC_admin.png" style="width:100%">
-                  <div class="text">Administrator Server</div>
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1, 'ARMVC')">❮</a>
-                <a class="next" onclick="plusSlides(1, 'ARMVC')">❯</a>         
-              </div>
-              <br>     
-              <div style="text-align:center">
-                <span class="dot-mySlides_ARMVC dot" onclick="currentSlide(1, 'ARMVC')"></span> 
-                <span class="dot-mySlides_ARMVC dot" onclick="currentSlide(2, 'ARMVC')"></span> 
-                <span class="dot-mySlides_ARMVC dot" onclick="currentSlide(3, 'ARMVC')"></span> 
-                <span class="dot-mySlides_ARMVC dot" onclick="currentSlide(4, 'ARMVC')"></span> 
-                <span class="dot-mySlides_ARMVC dot" onclick="currentSlide(5, 'ARMVC')"></span> 
-                <span class="dot-mySlides_ARMVC dot" onclick="currentSlide(6, 'ARMVC')"></span> 
-                <span class="dot-mySlides_ARMVC dot" onclick="currentSlide(7, 'ARMVC')"></span> 
-                <span class="dot-mySlides_ARMVC dot" onclick="currentSlide(8, 'ARMVC')"></span> 
-              </div>
-            </div>
-
-            
-
-
-
-
-            <!---------------------------------- 4 in a Line Multiplayer ---------------------------------->
-            <div id="project-details-TerraformCloud" class="project-details-item" style="display: none;">
-              <a href="#" class="previous previousPortfolio">&laquo; Previous</a>
-
-              <h1 class="projectTextTitle">4 In a Line Multiplayer</h1>
-              <p class="project-category project-category-detail">Web Development (Terraform | Docker)</p>
-              <div class="centered-container">
-                <iframe class="full-width-iframe" src="https://www.youtube.com/embed/QXOnAkGGGGw?si=HWD8wjf5oCJauCIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-
-              <br>
-              <p class="projectText" style="color: white">
-                <strong>
-                  The aim of this project is to offer a multiplayer Four in a Line game, built with HTML, CSS, and JavaScript, 
-                  that uses Docker for local play and Terraform and Google Cloud for online play (cloud). Four in a Line, a 
-                  classic two-player strategy game, in which the participants strive to create a sequence of four tokens on 
-                  a grid. As it is a solved game, the first player can always win by utilizing the right strategies, making it 
-                  ideal for players of all skill levels. The game is developed as a web application, following the project 
-                  requirements, which include decoupling it into three microservices, provisioning with Terraform, and 
-                  utilizing automated deployments from a Git repository.
-                </strong>                          
-              </p>
-              <br>
-              <p class="projectText" style="color: white">
-                <strong>
-                  The project is organized in a structured file system that separates the client-side, server-side, and 
-                  infrastructure elements. The system comprises a client, WebSocket server, and REST API, all 
-                  interconnected, with MongoDB serving as the database for the REST API, MongoDB local and MongoDB 
-                  Atlas for cloud. The client side deals with the user interface and game logic, whereas the server side 
-                  handles the WebSocket server, database connection and REST API to enable real-time communication 
-                  between players and preserve game data. By using contemporary technologies such as Node.js, 
-                  Express.js, and MongoDB, this project delivers a seamless and captivating gaming experience for all 
-                  users. 
-                </strong>                          
-              </p>
-              <br>
-              <p class="projectText" style="color: white">
-                <strong>
-                  The addition of Docker and Terraform streamlines the deployment process offline and online and allows 
-                  for easy scaling of the application. In this project, Docker is used to containerize each microservice (client, 
-                  server, and database) to enable smooth deployment and testing in a local environment and Terraform is 
-                  used to provision and manage the necessary project components on Google Cloud Platform.
-                </strong>                          
-              </p>
-              
-              <br>
-              <br>
-              <hr>
-              <br>
-              <p class="projectText"> <b> The proposed system has the following features: </b> </p>
-              <p class="projectTextItems">
-                • Creating the game code (HTML, CSS, JavaScript) by communicate with all 3 services with each other (client, server and database), and ensuring the game is playable for everyone, using rooms. <br>
-                • Ensuring that the Docker containers were configured correctly and communicating with each other.<br>
-                • Configuring the triggers for each component in GCP and connecting in terraform for the different services (client and server).<br>
-                • Using two different databases for the different scenarios (MongoDB locally and MongoDB Atlas cloud) <br>
-                • Creating extra settings (ex: cmd.sh) in project for google cloud detecting the project and communicate with the client and server <br>
-                • Ensuring the communication didn’t fail when users are playing the game, and other players could see the winners score when entering the game in another room. <br>
-              </p>
-              <br><br>
-              <div class="slideshow-container">
-                <div class="mySlides_Terraformcloud fade">
-                  <div class="numbertext">1 / 8</div>
-                  <img src="./assets/images/terraform1.png" style="width:100%">
-                  <div class="text">4 in a Line (Docker) </div>
-                </div>
-                
-                <div class="mySlides_Terraformcloud fade">
-                  <div class="numbertext">2 / 8</div>
-                  <img src="./assets/images/terraform2.png" style="width:100%">
-                  <div class="text">4 in a Line (Docker)</div>
-                </div>
-                
-                <div class="mySlides_Terraformcloud fade">
-                  <div class="numbertext">3 / 8</div>
-                  <img src="./assets/images/terraform3.png" style="width:100%">
-                  <div class="text">4 in a Line (Docker)</div>
-                </div>
-                
-                <div class="mySlides_Terraformcloud fade">
-                  <div class="numbertext">4 / 8</div>
-                  <img src="./assets/images/terraform_cloud.png" style="width:100%">
-                  <div class="text">Google Cloud</div> 
-                </div>
-
-                <div class="mySlides_Terraformcloud fade">
-                  <div class="numbertext">5 / 8</div>
-                  <img src="./assets/images/terraform_cloud2.png" style="width:100%">
-                  <div class="text">4 in a Line (Terraform)</div>
-                </div>
-
-                <div class="mySlides_Terraformcloud fade">
-                  <div class="numbertext">6 / 8</div>
-                  <img src="./assets/images/terraform_cloud3.png" style="width:100%">
-                  <div class="text">4 in a Line (Terraform)</div>
-                </div>
-
-                <div class="mySlides_Terraformcloud fade">
-                  <div class="numbertext">7 / 8</div>
-                  <img src="./assets/images/docker_approach.png" style="width:100%">
-                  <div class="text">Local Approach</div>
-                </div>
-
-                <div class="mySlides_Terraformcloud fade">
-                  <div class="numbertext">8 / 8</div>
-                  <img src="./assets/images/terraform_approach.png" style="width:100%">
-                  <div class="text">Cloud Approach</div>
-                </div>
-
-
-                <a class="prev" onclick="plusSlides(-1, 'Terraformcloud')">❮</a>
-                <a class="next" onclick="plusSlides(1, 'Terraformcloud')">❯</a>         
-              </div>
-              <br>     
-              <div style="text-align:center">
-                <span class="dot-mySlides_Terraformcloud dot" onclick="currentSlide(1, 'Terraformcloud')"></span> 
-                <span class="dot-mySlides_Terraformcloud dot" onclick="currentSlide(2, 'Terraformcloud')"></span> 
-                <span class="dot-mySlides_Terraformcloud dot" onclick="currentSlide(3, 'Terraformcloud')"></span> 
-                <span class="dot-mySlides_Terraformcloud dot" onclick="currentSlide(4, 'Terraformcloud')"></span> 
-                <span class="dot-mySlides_Terraformcloud dot" onclick="currentSlide(5, 'Terraformcloud')"></span> 
-                <span class="dot-mySlides_Terraformcloud dot" onclick="currentSlide(6, 'Terraformcloud')"></span> 
-                <span class="dot-mySlides_Terraformcloud dot" onclick="currentSlide(7, 'Terraformcloud')"></span> 
-                <span class="dot-mySlides_Terraformcloud dot" onclick="currentSlide(8, 'Terraformcloud')"></span> 
-              </div>
-            </div>
-
-
-
-
-
-
-            <!---------------------------------- MERN STACK ---------------------------------->
-            <div id="project-details-MERN" class="project-details-item" style="display: none;">
-              <a href="#" class="previous previousPortfolio">&laquo; Previous</a>
-
-              <h1 class="projectTextTitle">E-Commerce (MERN STACK Study)</h1>
-              <p class="project-category project-category-detail">Web Development (MERN)</p>
-
-              <br>
-              <p class="projectText" style="color: white">
-                <strong>
-                  This is an e-commerce application built using the MERN stack (MongoDB, Express, React, Node.js). 
-                  The application allows users to register, log in, add products, search, update, and delete products. 
-                  Authentication is implemented using JSON Web Tokens (JWT) for secure access.
-                  This is a projects to learn about the MERN stack and its components, and to practice 
-                  building a full-stack web application with user authentication and product management features.
-                </strong>                          
-              </p>
-
-              
-              <br>
-              <br>
-              <hr>
-              <br>
-              <p class="projectText"> <b> The proposed system has the following features: </b> </p>
-            <div class="projectTextItems">
-              <ul class="main-list">
-                <li>
-                  <strong>• Authentication and Authorization:</strong>
-                  <ul class="sub-list">
-                    <li>User registration and login.</li>
-                    <li>JWT-based token storage for route protection.</li>
-                  </ul>
-                </li>
-
-                <li>
-                  <strong>• Product Management:</strong>
-                  <ul class="sub-list">
-                    <li>Add new products.</li>
-                    <li>List products belonging to the logged-in user.</li>
-                    <li>Search for products by name, brand, or category.</li>
-                    <li>Update and delete products.</li>
-                  </ul>
-                </li>
-
-                <li>
-                  <strong>• Frontend:</strong>
-                  <ul class="sub-list">
-                    <li>Built with React to provide a modern user interface.</li>
-                    <li>Navigation between components using React Router.</li>
-                  </ul>
-                </li>
-
-                <li>
-                  <strong>• Backend:</strong>
-                  <ul class="sub-list">
-                    <li>RESTful API built with Node.js and Express.</li>
-                    <li>MongoDB integration for data storage.</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-              <br><br>
-              <div class="slideshow-container">
-                <div class="mySlides_MERN fade">
-                  <div class="numbertext">1 / 5</div>
-                  <img src="./assets/images/MERN_4.png" style="width:100%">
-                  <div class="text">Login </div>
-                </div>
-                
-                <div class="mySlides_MERN fade">
-                  <div class="numbertext">2 / 5</div>
-                  <img src="./assets/images/MERN_5.png" style="width:100%">
-                  <div class="text">Register</div>
-                </div>
-                
-                <div class="mySlides_MERN fade">
-                  <div class="numbertext">3 / 5</div>
-                  <img src="./assets/images/MERN_1.png" style="width:100%">
-                  <div class="text">List of Products</div>
-                </div>
-                
-                <div class="mySlides_MERN fade">
-                  <div class="numbertext">4 / 5</div>
-                  <img src="./assets/images/MERN_2.png" style="width:100%">
-                  <div class="text">Add Product</div> 
-                </div>
-
-                <div class="mySlides_MERN fade">
-                  <div class="numbertext">5 / 5</div>
-                  <img src="./assets/images/MERN_3.png" style="width:100%">
-                  <div class="text">Update Product</div>
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1, 'MERN')">❮</a>
-                <a class="next" onclick="plusSlides(1, 'MERN')">❯</a>         
-              </div>
-              <br>     
-              <div style="text-align:center">
-                <span class="dot-mySlides_MERN dot" onclick="currentSlide(1, 'MERN')"></span> 
-                <span class="dot-mySlides_MERN dot" onclick="currentSlide(2, 'MERN')"></span> 
-                <span class="dot-mySlides_MERN dot" onclick="currentSlide(3, 'MERN')"></span> 
-                <span class="dot-mySlides_MERN dot" onclick="currentSlide(4, 'MERN')"></span> 
-                <span class="dot-mySlides_MERN dot" onclick="currentSlide(5, 'MERN')"></span> 
-              </div>
-            </div>
-
-
-
-            <!---------------------------------- CLINICAL MANAGEMENT SYSTEM ---------------------------------->
-            <div id="project-details-Clinical" class="project-details-item" style="display: none;">
-              <a href="#" class="previous previousPortfolio">&laquo; Previous</a>
-
-              <h1 class="projectTextTitle">Clinical Management System</h1>
-              <p class="project-category project-category-detail">Web Development (NUXT | Java | Docker)</p>
-              <div class="centered-container">
-                <iframe class="full-width-iframe" src="https://www.youtube.com/embed/odu18feHyzs?si=faTqAXPHgdgcT0uQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <br>
-              <p class="projectText" style="color: white">
-                <strong>
-                  The main objective of this project is to develop a clinical enterprise application for managing biomedical data and signals of individuals with cardiovascular diseases.
-                  This repository showcases the front-end (client) of the application, built with NUXT.JS, while the backend is implemented in JAVA, and the environment is managed using Docker.
-                </strong>                          
-              </p>
-              
-              <br>
-              <br>
-              <hr>
-              <br>
-              <p class="projectText"> <b> The proposed system has the following features: </b> </p>
-              <p class="projectTextItems">
-                • Role-based features: The system provides different functionalities for administrators, healthcare professionals, and patients, ensuring appropriate access and permissions. <br>
-                • Management operations (CRUD): Users can create, edit, delete, and restore entities such as patients, professionals, administrators, biometric data types, prescriptions, and observations.<br>
-                • Health data monitoring: The platform manages biometric data, prescriptions, observations, and related documents, allowing healthcare professionals to track patient information.<br>
-                • Dashboards and statistics: Each role has a dashboard displaying relevant information, such as recent prescriptions, biometric data, and system statistics. <br>
-                • Notifications and communication: The system sends email notifications for important events, including account changes, new prescriptions, observations, and patient–professional associations. <br>
-                • Additional system features: Includes soft deletes, document uploads, data import/export, responsive interface, and data classification updates. <br>
-              </p>
-              <br><br>
-              <div class="slideshow-container">
-                <div class="mySlides_CLINICAL fade">
-                  <div class="numbertext">1 / 7</div>
-                  <img src="./assets/images/clinical1.png" style="width:100%">
-                  <div class="text">Menu </div>
-                </div>
-                
-                <div class="mySlides_CLINICAL fade">
-                  <div class="numbertext">2 / 7</div>
-                  <img src="./assets/images/clinical2.png" style="width:100%">
-                  <div class="text">Patient Management</div>
-                </div>
-                
-                <div class="mySlides_CLINICAL fade">
-                  <div class="numbertext">3 / 7</div>
-                  <img src="./assets/images/clinical10.png" style="width:100%">
-                  <div class="text">Add Diseases</div>
-                </div>
-                
-                <div class="mySlides_CLINICAL fade">
-                  <div class="numbertext">4 / 7</div>
-                  <img src="./assets/images/clinical3.png" style="width:100%">
-                  <div class="text">Patient Information</div> 
-                </div>
-
-                <div class="mySlides_CLINICAL fade">
-                  <div class="numbertext">5 / 7</div>
-                  <img src="./assets/images/clinical5.png" style="width:100%">
-                  <div class="text">List of Patients in Excel</div>
-                </div>
-
-                <div class="mySlides_CLINICAL fade">
-                  <div class="numbertext">6 / 7</div>
-                  <img src="./assets/images/clinical8.png" style="width:100%">
-                  <div class="text">New Prescription</div>
-                </div>
-
-                <div class="mySlides_CLINICAL fade">
-                  <div class="numbertext">7 / 7</div>
-                  <img src="./assets/images/clinical7.png" style="width:100%">
-                  <div class="text">Data Information</div>
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1, 'CLINICAL')">❮</a>
-                <a class="next" onclick="plusSlides(1, 'CLINICAL')">❯</a>         
-              </div>
-              <br>     
-              <div style="text-align:center">
-                <span class="dot-mySlides_CLINICAL dot" onclick="currentSlide(1, 'CLINICAL')"></span> 
-                <span class="dot-mySlides_CLINICAL dot" onclick="currentSlide(2, 'CLINICAL')"></span> 
-                <span class="dot-mySlides_CLINICAL dot" onclick="currentSlide(3, 'CLINICAL')"></span> 
-                <span class="dot-mySlides_CLINICAL dot" onclick="currentSlide(4, 'CLINICAL')"></span> 
-                <span class="dot-mySlides_CLINICAL dot" onclick="currentSlide(5, 'CLINICAL')"></span> 
-                <span class="dot-mySlides_CLINICAL dot" onclick="currentSlide(6, 'CLINICAL')"></span> 
-                <span class="dot-mySlides_CLINICAL dot" onclick="currentSlide(7, 'CLINICAL')"></span> 
-              </div>
-            </div>
-
-
-
-            <!---------------------------------- VARCAM ---------------------------------->
-            <div id="project-details-Web" class="project-details-item" style="display: none;">
-              <a href="#" class="previous previousPortfolio">&laquo; Previous</a>
-
-              <h1 class="projectTextTitle">UAV Augmented Reality Management using Web Application</h1>
-              <p class="project-category project-category-detail">Web Development</p>
-              <br>
-              <div class="centered-container">
-                <iframe class="full-width-iframe" src="https://www.youtube.com/embed/CEQe08uTEHo?si=rDRy_iJO3kBJNJRW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <p class="timeline-text" style="padding-left: 10px;">
-                <strong>Project Name: </strong> DBoidS - Digital Twin Boids Fire Prevention System
-                <a class="listItemsURL" href="https://sciproj.ptcris.pt/171663PRJ" class="social-link">
-                  10.54499/PTDC/CCI-COM/2416/2021
-                </a>
-              </p>
-              <br>
-              <p class="projectText" style="color: white">
-                <strong>
-                  This study presents a Digital Twin (DT) Web system for UAVs (drones)
-                  that enables users to visualize, control, and mission planner for both virtual and real
-                  UAVs for wildfire prevention and monitoring through a mobile device. The
-                  proposed DT-based web application includes four key services: UAV Flight Data Generator, Visualization,
-                  Control, and autonomous movement through GPS coordinates. To facilitate the deployment of UAVs, 
-                  GPS coordinates were used to regulate their positioning and movement.     
-                  This method allows users to test and train UAV control in a virtual 
-                  environment before moving to real-world scenarios, reducing risks and costs.                
-                </strong>                          
-              </p>
-              <br>
-              <p class="projectText" style="color: var(--orange-yellow-crayola)">
-                <strong>Project Paper: (In Progress) </strong>           
-              </p>
-              <br>
-              <hr>
-              <br>
-              <p class="projectText"> <b> The proposed DT system leads to the following contributions: </b> </p>
-              <p class="projectTextItems">
-                • Digital Twin-based web application to visualize, control and mission planer UAVs using Google Maps API; <br>
-                • Autonomous UAV data attribution and movement using external UAV data for real-time remote visualization; <br>
-                • Virtual environment for users to test and train UAV control without risks; <br>
-                • Hybrid approach to allow the combination of real and virtual environments; <br>
-                • Integration with Gazebo simulator for UAV management (Websockets). <br>
-              <br><br>
-              <p class="projectText"> <b> This application contains the following developed features: </b></p>
-              <p class="projectTextItems">
-                • Drone Markers (using Google Maps API) for visualization of UAVs along with their associated information;<br>
-                • A comprehensive list of UAVs, both virtual and real, for management and selection;<br>
-                • Multiple commands for managing real UAVs efficiently;<br>
-                • Manual control of UAVs using the key arrows for directional movement;<br>
-                • Live visualization of the UAV's camera feed;<br>
-                • Autonomous Movement in a certain area using virtual and real UAVs.<br>
-              </p>
-              <br><br>
-              <div class="slideshow-container">
-                <div class="mySlides_WEB fade">
-                  <div class="numbertext">1 / 3</div>
-                  <img src="./assets/images/connecting_websockets_map.png" style="width:100%">
-                  <div class="text" style="color: black">UAV visualization</div>
-                </div>
-                
-                <div class="mySlides_WEB fade">
-                  <div class="numbertext">2 / 3</div>
-                  <img src="./assets/images/web_websocket_connection.png" style="width:100%">
-                  <div class="text" style="color: black">UAV Connection</div>
-                </div>
-                
-                <div class="mySlides_WEB fade">
-                  <div class="numbertext">3 / 3</div>
-                  <img src="./assets/images/web_missionplanner.png" style="width:100%">
-                  <div class="text" style="color: black">UAV Mission Planner</div>
-                </div>
-                
-                <a class="prev" onclick="plusSlides(-1, 'WEB')">❮</a>
-                <a class="next" onclick="plusSlides(1, 'WEB')">❯</a>            
-              </div>
-              <br>     
-              <div style="text-align:center">
-                <span class="dot-mySlides_WEB dot" onclick="currentSlide(1, 'WEB')"></span> 
-                <span class="dot-mySlides_WEB dot" onclick="currentSlide(2, 'WEB')"></span> 
-                <span class="dot-mySlides_WEB dot" onclick="currentSlide(3, 'WEB')"></span>
-              </div>
-            </div>
-
-
-
-
-            <!---------------------------------- ARTA ---------------------------------->
-            <div id="project-details-Training" class="project-details-item" style="display: none;">
-              <a href="#" class="previous previousPortfolio">&laquo; Previous</a>
-
-              <h1 class="projectTextTitle">Augmented Reality Training Application</h1>
-              <p class="project-category project-category-detail">Unity 3D AR (PC & AR)</p>
-              <div class="centered-container">
-                <iframe class="full-width-iframe" src="https://www.youtube.com/embed/Ou29EKSQfNo?si=aX3Gqg4_Oqus99EO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <br>
-              <p class="projectText" style="color: white">
-                <strong> 
-                  The system allows trainers to create training scenarios based on immersive experiences using augmented reality technologies. 
-                  Both the trainer and the trainee have access to specific applications on certain platforms, enabling them to perform their tasks.
-                </strong>                          
-              </p>
-              <br>
-              <hr>
-              <br>
-              <p class="projectText"> <b> The system is composed of two applications that share content via a storage service: </b> </p>
-              <p class="projectTextItems">
-                - <b>TCA (Training Configuration Application)</b> a desktop application for trainers, acting as a configurator/editor of training scenarios; <br>
-                - <b>ARTA (AR Training Application)</b> a mobile application used by trainees to experience the training scenarios created by trainers in the TCA application;<br>
-                - <b>TSIS (Training Session Information System) –</b> a server-hosted service for storing the created training scenarios and providing access and submission endpoints to both applications, according to their respective requirements.<br>
-              </p>
-              <br><br>
-              <div class="slideshow-container" style="text-align: center;">
-                <div class="mySlides_TRAINING fade">
-                  <div class="numbertext">1 / 7</div>
-                  <img src="./assets/images/arta_1.png" style="width:100%">
-                  <div class="text slide_text_red">TCA</div>
-                </div>           
-
-                <div class="mySlides_TRAINING fade">
-                  <div class="numbertext">2 / 7</div>
-                  <img src="./assets/images/arta_2.jpg" style="width:25%; margin: 0 auto;">
-                  <div class="text slide_text_red">ARTA 1</div>
-                </div>  
-
-                <div class="mySlides_TRAINING fade">
-                  <div class="numbertext">3 / 7</div>
-                  <img src="./assets/images/arta_3.jpg" style="width:25%; margin: 0 auto;">
-                  <div class="text slide_text_red">ARTA 2</div>
-                </div>
-
-                <div class="mySlides_TRAINING fade">
-                  <div class="numbertext">4 / 7</div>
-                  <img src="./assets/images/arta_4.jpg" style="width:25%; margin: 0 auto;">
-                  <div class="text slide_text_red">ARTA 3</div>
-                </div>
-
-                <div class="mySlides_TRAINING fade">
-                  <div class="numbertext">5 / 7</div> 
-                  <img src="./assets/images/arta_5.jpg" style="width:25%; margin: 0 auto;">
-                  <div class="text slide_text_red">ARTA 4</div>
-                </div>
-
-                <div class="mySlides_TRAINING fade">
-                  <div class="numbertext">6 / 7</div>
-                  <img src="./assets/images/arta_6.jpg" style="width:25%; margin: 0 auto;">
-                  <div class="text slide_text_red">ARTA 5</div>
-                </div>
-
-                <div class="mySlides_TRAINING fade">
-                  <div class="numbertext">7 / 7</div>
-                  <img src="./assets/images/arta_7.jpg" style="width:25%; margin: 0 auto;">
-                  <div class="text slide_text_red">ARTA 6</div>
-               </div>            
-                
-                <a class="prev" onclick="plusSlides(-1, 'TRAINING')">❮</a>
-                <a class="next" onclick="plusSlides(1, 'TRAINING')">❯</a>               
-              </div>
-              <br>
-              
-              <div style="text-align:center">
-                <span class="dot-mySlides_TRAINING dot" onclick="currentSlide(1, 'TRAINING')"></span> 
-                <span class="dot-mySlides_TRAINING dot" onclick="currentSlide(2, 'TRAINING')"></span> 
-                <span class="dot-mySlides_TRAINING dot" onclick="currentSlide(3, 'TRAINING')"></span> 
-                <span class="dot-mySlides_TRAINING dot" onclick="currentSlide(4, 'TRAINING')"></span> 
-                <span class="dot-mySlides_TRAINING dot" onclick="currentSlide(5, 'TRAINING')"></span> 
-                <span class="dot-mySlides_TRAINING dot" onclick="currentSlide(6, 'TRAINING')"></span> 
-                <span class="dot-mySlides_TRAINING dot" onclick="currentSlide(7, 'TRAINING')"></span>
-              </div>
-            </div>
-
-
-
-
-            
-            <!---------------------------------- DIMENSIONS ---------------------------------->
-            <div id="project-details-Dimensions" class="project-details-item" style="display: none;">
-              <a href="#" class="previous previousPortfolio">&laquo; Previous</a>
-
-              <h1 class="projectTextTitle">Dimensions</h1>
-              <p class="project-category project-category-detail">Unity 2D and 3D (PC)</p>
-              <div class="centered-container">
-                <iframe class="full-width-iframe" src="https://www.youtube.com/embed/JifOPwcG7Os?si=pGR6SBywfRpl2Afy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <br>
-              <p class="projectText" style="color: white">
-                <strong>
-                    This personal project aims to explore a novel concept by combining 2D and 3D elements in a single game. 
-                    The player controls two characters: one can manipulate 2D physical objects, while the other can handle 3D physical objects. 
-                    The main goal is to solve puzzles and defeat enemies to progress through the game. 
-                    These puzzles require both characters to work together, using both 2D and 3D objects to succeed.
-                </strong>                          
-              </p>
-              <a class="listItemsURL" href="https://ccostax.itch.io/dimensions" class="social-link">
-                Itch.io
-              </a>
-              <br>
-              <hr>
-              <br>
-              <p class="projectText"><b> Each character can only move objects of a specific color: </b></p>
-              <p class="projectTextItems" style="color:#33ccff">
-                  • Green - 2D Physics and Objects <br>
-              </p>
-              <p class="projectTextItems" style="color: #00cc66">
-                  • Blue - 3D Physics and Objects <br>
-              </p>
-              <br>
-              <p class="projectText"><b> The game includes: </b></p>
-              <p class="projectTextItems">
-                  • 2D and 3D dimensions (the camera perspective changes depending on the character currently in use) <br>
-                  • Puzzle-solving and enemy combat <br>
-                  • Abilities such as jumping, dashing, attacking, and moving blocks <br>
-              </p>
-              <br><br>
-              <div class="slideshow-container">
-                <div class="mySlides_DIMENSIONS fade">
-                  <div class="numbertext">1 / 3</div>
-                  <img src="./assets/images/dimensions1.png" style="width:100%">
-                </div>
-                
-                <div class="mySlides_DIMENSIONS fade">
-                  <div class="numbertext">2 / 3</div>
-                  <img src="./assets/images/dimensions2.png" style="width:100%">
-                </div>
-                
-                <div class="mySlides_DIMENSIONS fade">
-                  <div class="numbertext">3 / 3</div>
-                  <img src="./assets/images/dimensions3.png" style="width:100%">
-                </div>
-                
-                <a class="prev" onclick="plusSlides(-1, 'DIMENSIONS')">❮</a>
-                <a class="next" onclick="plusSlides(1, 'DIMENSIONS')">❯</a>           
-              </div>
-              <br>        
-              <div style="text-align:center">
-                <span class="dot-mySlides_DIMENSIONS dot" onclick="currentSlide(1, 'DIMENSIONS')"></span> 
-                <span class="dot-mySlides_DIMENSIONS dot" onclick="currentSlide(2, 'DIMENSIONS')"></span> 
-                <span class="dot-mySlides_DIMENSIONS dot" onclick="currentSlide(3, 'DIMENSIONS')"></span> 
-              </div>
-            </div>
-
-
-
-
-
-            <!------------------------------------ SHADOW ------------------------------------>
-            <div id="project-details-Shadow" class="project-details-item" style="display: none;">
-              <a href="#" class="previous previousPortfolio">&laquo; Previous</a>
-
-              <h1 class="projectTextTitle">Shadow (OnlyUp)</h1>
-              <p class="project-category project-category-detail">Unity 3D (PC)</p>
-              <div class="centered-container">
-                <iframe class="full-width-iframe" src="https://www.youtube.com/embed/0mXKkcgL1ko?si=JvuYNkMSh1g-880U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <br>
-              <p class="projectText" style="color: white">
-                <strong>
-                    Secret Santa Jam 2024 Game Challenge!!!
-                    Shadow OnlyUp - A jorney where Shadow need to climb up while being fast!!! Are you up to the challenge?!
-                </strong>                          
-              </p>
-              <a class="listItemsURL" href="https://ccostax.itch.io/shadow-onlyup" class="social-link">
-                Itch.io
-              </a>
-              <br>
-              <hr>
-              <br>
-              <p class="projectText"><b> The game includes: </b></p>
-              <p class="projectTextItems">
-                  • Game OnlyUp Platform Style, with 3 different scenarios<br>
-                  • Abilities such as jumping, speed, dash, homing attack, double jump <br>
-                  • Shop to customize the character and scenario<br>
-              </p>
-              <br><br>
-              <div class="slideshow-container">
-                <div class="mySlides_SHADOW fade">
-                  <div class="numbertext">1 / 3</div>
-                  <img src="./assets/images/shadow1.png" style="width:100%">
-                </div>
-                
-                <div class="mySlides_SHADOW fade">
-                  <div class="numbertext">2 / 3</div>
-                  <img src="./assets/images/shadow2.png" style="width:100%">
-                </div>
-                
-                <div class="mySlides_SHADOW fade">
-                  <div class="numbertext">3 / 3</div>
-                  <img src="./assets/images/shadow3.png" style="width:100%">
-                </div>
-
-                <div class="mySlides_SHADOW fade">
-                  <div class="numbertext">3 / 3</div>
-                  <img src="./assets/images/shadow4.png" style="width:100%">
-                </div>
-
-                <div class="mySlides_SHADOW fade">
-                  <div class="numbertext">3 / 3</div>
-                  <img src="./assets/images/shadow5.png" style="width:100%">
-                </div>
-                
-                <a class="prev" onclick="plusSlides(-1, 'SHADOW')">❮</a>
-                <a class="next" onclick="plusSlides(1, 'SHADOW')">❯</a>           
-              </div>
-              <br>        
-              <div style="text-align:center">
-                <span class="dot-mySlides_SHADOW dot" onclick="currentSlide(1, 'SHADOW')"></span> 
-                <span class="dot-mySlides_SHADOW dot" onclick="currentSlide(2, 'SHADOW')"></span> 
-                <span class="dot-mySlides_SHADOW dot" onclick="currentSlide(3, 'SHADOW')"></span> 
-                <span class="dot-mySlides_SHADOW dot" onclick="currentSlide(4, 'SHADOW')"></span> 
-                <span class="dot-mySlides_SHADOW dot" onclick="currentSlide(5, 'SHADOW')"></span> 
-              </div>
-            </div>
-
-
-
-
-
-            <!---------------------------------- MISSAO NUTRITIVA ---------------------------------->
-            <div id="project-details-Nutricao" class="project-details-item" style="display: none;">
-              <a href="#" class="previous previousPortfolio">&laquo; Previous</a>
-
-              <h1 class="projectTextTitle">Missão Nutritiva</h1>
-              <p class="project-category project-category-detail">Unity 2D (Mobile)</p>
-              <div class="centered-container">
-                <iframe class="full-width-iframe" src="https://www.youtube.com/embed/pQot34SdBuQ?si=UGynqQXm5GUWyuUQ" title="Missão Nutritiva" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <br>
-              <p class="projectText" style="color: white">
-                <strong>               
-                This project is a mobile 2D game designed to help kids learn about nutrition through play. 
-                The game provides strategies for children to understand the nutritional value and properties of various foods, 
-                including proteins, fiber, carbohydrates, and fats.
-                </strong>                          
-              </p>
-              <br>
-              <hr>
-              <br>
-              <p class="projectText"> <b>The main game includes multiple levels where players need to:</b> </p>
-              <p class="projectTextItems">
-                - Collect all essential nutrients (proteins, fiber, carbohydrates, and fats) by catching healthy foods until the indicators turn green, signifying good health.<br>
-                - Unlock two new fruits at each level, increasing the difficulty while expanding knowledge about different foods.<br>
-                - Navigate levels containing both good and bad fruits, requiring players to distinguish between healthy and unhealthy options.<br>
-              </p>
-              <br><br>
-              <p class="projectText"> <b>Additional games and features include:</b></p>
-              <p class="projectTextItems">
-                - Main Game (Level Phased)<br>
-                - Cooking Smoothie (Learn to shop for ingredients, cut them, and make smoothies)<br>
-                - Library (A resource to help players understand the nutritional value of various foods)<br>
-              </p>
-              <br><br>
-              <div class="slideshow-container">
-                <div class="mySlides_NUTRITION fade">
-                  <div class="numbertext">1 / 8</div>
-                  <img src="./assets/images/nutricao1.png" style="width:100%">
-                  <div class="text">Main Game - Level Help</div>
-                </div>
-                
-                <div class="mySlides_NUTRITION fade">
-                  <div class="numbertext">2 / 8</div>
-                  <img src="./assets/images/nutricao2.png" style="width:100%">
-                  <div class="text">Main Game - Level Help</div>
-                </div>
-                
-                <div class="mySlides_NUTRITION fade">
-                  <div class="numbertext">3 / 8</div>
-                  <img src="./assets/images/nutricao3.png" style="width:100%">
-                  <div class="text">Main Game - Level</div>
-                </div>
-
-                <div class="mySlides_NUTRITION fade">
-                  <div class="numbertext">4 / 8</div>
-                  <img src="./assets/images/nutricao4.png" style="width:100%">
-                  <div class="text">Main Game - Victory</div>
-                </div>
-
-                <div class="mySlides_NUTRITION fade">
-                  <div class="numbertext">5 / 8</div>
-                  <img src="./assets/images/nutricao5.png" style="width:100%">
-                  <div class="text">Cooking Smoothie - Level Help</div>
-                </div>
-
-                <div class="mySlides_NUTRITION fade">
-                  <div class="numbertext">6 / 8</div>
-                  <img src="./assets/images/nutricao6.png" style="width:100%">
-                  <div class="text">Cooking Smoothie - Level Phase 1</div>
-                </div>
-
-                <div class="mySlides_NUTRITION fade">
-                  <div class="numbertext">7 / 8</div>
-                  <img src="./assets/images/nutricao7.png" style="width:100%">
-                  <div class="text">Cooking Smoothie - Level Phase 2 </div>
-                </div>
-
-                <div class="mySlides_NUTRITION fade">
-                  <div class="numbertext">8 / 8</div>
-                  <img src="./assets/images/nutricao8.png" style="width:100%">
-                  <div class="text">Cooking Smoothie - Level Phase 3 </div>
-                </div>
-                
-                <a class="prev" onclick="plusSlides(-1, 'NUTRITION')">❮</a>
-                <a class="next" onclick="plusSlides(1, 'NUTRITION')">❯</a>             
-              </div>
-              <br>
-              
-              <div style="text-align:center">
-                <span class="dot-mySlides_NUTRITION dot" onclick="currentSlide(1, 'NUTRITION')"></span> 
-                <span class="dot-mySlides_NUTRITION dot" onclick="currentSlide(2, 'NUTRITION')"></span> 
-                <span class="dot-mySlides_NUTRITION dot" onclick="currentSlide(3, 'NUTRITION')"></span> 
-                <span class="dot-mySlides_NUTRITION dot" onclick="currentSlide(4, 'NUTRITION')"></span> 
-                <span class="dot-mySlides_NUTRITION dot" onclick="currentSlide(5, 'NUTRITION')"></span> 
-                <span class="dot-mySlides_NUTRITION dot" onclick="currentSlide(6, 'NUTRITION')"></span> 
-                <span class="dot-mySlides_NUTRITION dot" onclick="currentSlide(7, 'NUTRITION')"></span> 
-                <span class="dot-mySlides_NUTRITION dot" onclick="currentSlide(8, 'NUTRITION')"></span> 
-              </div>
-            </div>
-            
-
-
-
-
-            <!---------------------------------- DEFEND YOUR CASTLE AR ---------------------------------->
-            <div id="project-details-DefendYourCastleAR" class="project-details-item" style="display: none;">
-              <a href="#" class="previous previousPortfolio">&laquo; Previous</a>
-
-              <h1 class="projectTextTitle">Defend Your Castle AR</h1>
-              <p class="project-category project-category-detail">Unity 3D AR (Mobile)</p>
-              <div class="centered-container">
-                <iframe class="full-width-iframe" src="https://www.youtube.com/embed/-0xTZODNRhQ?si=yHgra_PqYAwWc1lI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <br>
-              <p class="projectText" style="color: white">
-                <strong>
-                  This project is a mobile augmented reality game where players build their own castle and aim to destroy the enemy's castle. 
-                  The player who successfully destroys the opponent's castle wins.  
-                  The multiplayer was developed by using Photon Engine. 
-                </strong>                          
-              </p>
-              <a class="listItemsURL" href="https://ccostax.itch.io/defend-your-castle-ar" class="social-link">
-                Itch.io
-              </a>
-              <br>
-              <p class="projectText">
-                <strong>Project Paper Published: </strong>
-                <a class="listItemsURL" href="https://ieeexplore.ieee.org/document/10452716" class="social-link">
-                  https://ieeexplore.ieee.org/document/10452716
-                </a>
-              </p>
-              <br>
-              <hr>
-              <br>
-              <p class="projectText"> <b> The main game contains multiple phases: </b> </p>
-              <p class="projectTextItems">
-                - In the first phase, the player must build their castle with two blocks in height and four blocks in length on each of the four sides.<br>
-                - In the second phase, both players have a limited number of cannons to place on their castle walls.<br>
-                - The third phase involves a timed confrontation where players fire cannons at each other's castles within a time limit.<br>
-                - In the fourth phase, players must rebuild their castles to close any openings within a set time limit (reducing each time). Phases 3 and 4 repeat until one player is unable to close their castle, resulting in their defeat.<br>
-              </p>
-              <br><br>
-              <p class="projectText"> <b> This games contains the following developed features: </b></p>
-              <p class="projectTextItems">
-                - Main Game (Multiplayer - 2 players)<br>
-                - Creative (Unlimited block placement and shooting practice)<br>
-                - Tutorial (Step-by-step learning of game phases)<br>
-                - Shop (Earn coins in the main game to customize your castle layout)<br>
-              </p>
-              <br><br>
-              <div class="slideshow-container">
-                <div class="mySlides_DEFENDYOURCASTLEAR fade">
-                  <div class="numbertext">1 / 5</div>
-                  <img src="./assets/images/DefendYourCastle_cover.png" style="width:100%">
-                  <div class="text">Shooting Phase</div>
-                </div>           
-
-                <div class="mySlides_DEFENDYOURCASTLEAR fade">
-                  <div class="numbertext">2 / 5</div>
-                  <img src="./assets/images/DYCAR_building.png" style="width:100%">
-                  <div class="text">Build Phase</div>
-                </div>  
-
-                <div class="mySlides_DEFENDYOURCASTLEAR fade">
-                  <div class="numbertext">3 / 5</div>
-                  <img src="./assets/images/DYCAR_creative.png" style="width:100%">
-                  <div class="text">Creative Mode</div>
-                </div>
-
-                <div class="mySlides_DEFENDYOURCASTLEAR fade">
-                  <div class="numbertext">4 / 5</div>
-                  <img src="./assets/images/DYCAR_shop.png" style="width:100%">
-                  <div class="text">Shop</div>
-                </div>
-
-                <div class="mySlides_DEFENDYOURCASTLEAR fade">
-                  <div class="numbertext">5 / 5</div>
-                  <img src="./assets/images/DYCAR_tutorial.png" style="width:100%">
-                  <div class="text">Tutorial</div>
-                </div>
-                
-                
-                <a class="prev" onclick="plusSlides(-1, 'DEFENDYOURCASTLEAR')">❮</a>
-                <a class="next" onclick="plusSlides(1, 'DEFENDYOURCASTLEAR')">❯</a>               
-              </div>
-              <br>
-              
-              <div style="text-align:center">
-                <span class="dot-mySlides_DEFENDYOURCASTLEAR dot" onclick="currentSlide(1, 'DEFENDYOURCASTLEAR')"></span> 
-                <span class="dot-mySlides_DEFENDYOURCASTLEAR dot" onclick="currentSlide(2, 'DEFENDYOURCASTLEAR')"></span> 
-                <span class="dot-mySlides_DEFENDYOURCASTLEAR dot" onclick="currentSlide(3, 'DEFENDYOURCASTLEAR')"></span> 
-                <span class="dot-mySlides_DEFENDYOURCASTLEAR dot" onclick="currentSlide(4, 'DEFENDYOURCASTLEAR')"></span> 
-                <span class="dot-mySlides_DEFENDYOURCASTLEAR dot" onclick="currentSlide(5, 'DEFENDYOURCASTLEAR')"></span> 
-              </div>
-            </div>
-
-
-
-
-
-            <!------------------------------------ SIMPLE LAND ------------------------------------>
-            <div id="project-details-SimpleLand" class="project-details-item" style="display: none;">
-              <a href="#" class="previous previousPortfolio">&laquo; Previous</a>
-              
-              <h1 class="projectTextTitle"> Simple Land</h1>
-              <p class="project-category project-category-detail">Unity 2D Multiplayer (Mobile)</p>
-              <div class="slideshow-container">
-                <div class="mySlides_SIMPLELAND fade">
-                  <div class="numbertext">1 / 7</div>
-                  <img src="./assets/images/simpleland7.jpg" style="width:100%">
-                  <div class="text">Main Game</div>
-                </div>
-
-                <div class="mySlides_SIMPLELAND fade">
-                  <div class="numbertext">2 / 7</div>
-                  <img src="./assets/images/SimpleLand_cover.jpg" style="width:100%">
-                  <div class="text">Main Game</div>
-                </div>
-
-                <div class="mySlides_SIMPLELAND fade">
-                  <div class="numbertext">3 / 7</div>
-                  <img src="./assets/images/simpleland3.jpg" style="width:100%">
-                  <div class="text">Mini game</div>
-                </div>
-
-                <div class="mySlides_SIMPLELAND fade">
-                  <div class="numbertext">4 / 7</div>
-                  <img src="./assets/images/simpleland5.jpg" style="width:100%">
-                  <div class="text">Lobby</div>
-                </div>
-                
-                <div class="mySlides_SIMPLELAND fade">
-                  <div class="numbertext">5 / 7</div>
-                  <img src="./assets/images/simpleland4.jpg" style="width:100%">
-                  <div class="text">Create lobby</div>
-                </div>
-                
-                <div class="mySlides_SIMPLELAND fade">
-                  <div class="numbertext">6 / 7</div>
-                  <img src="./assets/images/simpleland1.jpg" style="width:100%">
-                  <div class="text">Shop</div>
-                </div>
-
-                <div class="mySlides_SIMPLELAND fade">
-                  <div class="numbertext">7 / 7</div>
-                  <img src="./assets/images/simpleland2.jpg" style="width:100%">
-                  <div class="text">Achievements</div>
-                </div>
-                
-                <a class="prev" onclick="plusSlides(-1, 'SIMPLELAND')">❮</a>
-                <a class="next" onclick="plusSlides(1, 'SIMPLELAND')">❯</a>
-                
-              </div>
-              <br>
-              
-              <div style="text-align:center">
-                <span class="dot-mySlides_SIMPLELAND dot" onclick="currentSlide(1, 'SIMPLELAND')"></span> 
-                <span class="dot-mySlides_SIMPLELAND dot" onclick="currentSlide(2, 'SIMPLELAND')"></span> 
-                <span class="dot-mySlides_SIMPLELAND dot" onclick="currentSlide(3, 'SIMPLELAND')"></span> 
-                <span class="dot-mySlides_SIMPLELAND dot" onclick="currentSlide(4, 'SIMPLELAND')"></span>
-                <span class="dot-mySlides_SIMPLELAND dot" onclick="currentSlide(5, 'SIMPLELAND')"></span>
-                <span class="dot-mySlides_SIMPLELAND dot" onclick="currentSlide(6, 'SIMPLELAND')"></span>
-                <span class="dot-mySlides_SIMPLELAND dot" onclick="currentSlide(7, 'SIMPLELAND')"></span>
-              </div>
-              <br>
-              <p class="projectText" style="color: white">
-                <strong>
-                  This game is a 2D multiplayer adventure where players must work together to progress through levels and collect items in Simple Land. 
-                  Players can use blocks to aid each other by moving and placing them on the map with a swipe of the finger. 
-                  The multiplayer functionality is powered by Unity Relay Networking.
-                </strong>                          
-              </p>
-              <a class="listItemsURL" href="https://ccostax.itch.io/simple-land" class="social-link">
-                Itch.io
-              </a>
-              <br>
-              <hr>
-              <br>
-              <p class="projectText"> <b>The main game includes several features:</b> </p>
-              <p class="projectTextItems">
-                • Create and join lobby<br>
-                • Captain role (can insert, move, and enlarge blocks in the game)<br>
-                • Other players (cannot manipulate blocks)<br>
-                • Levels with unique abilities (super jumping, dashing, etc.)<br>
-              </p>
-              <br><br>
-              <p class="projectText"> <b>The game also features:</b></p>
-              <p class="projectTextItems">
-                • Main Game (Multiplayer: 1-8 players)<br>
-                • Minigames (Singleplayer: e.g., meteor escape, Pac-Man style challenges)<br>
-                • Shop (Purchase clothes for characters)<br>
-                • Achievements (Earned by playing the main game)<br>
-              </p>
-            </div>
-
-
-
-
-
-            <!------------------------------------ MOOCS ------------------------------------>
-            <div id="project-details-Moocs" class="project-details-item" style="display: none;">
-              <a href="#" class="previous previousPortfolio">&laquo; Previous</a>
-
-              <h1 class="projectTextTitle">Creation of MOOCs</h1>
-              <p class="project-category project-category-detail">Video Editing (HeyGen, Capcut), Web Development (Moodle)</p>
-              <div class="centered-container">
-                <iframe class="full-width-iframe" src="https://www.youtube.com/embed/MRYcBC9TI1Y?si=9tM-CzR_z4dPnZyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <br>
-              <p class="projectText" style="color: white">
-                <strong>
-                  Developed comprehensive online courses (MOOCs) hosted on Moodle, integrating interactive quizzes and multimedia content. 
-                  Created instructional videos using HeyGen (AI avatars for narration) and CapCut.
-                  The courses covered various topics and were designed to support self-paced learning with a focus on accessibility and interactivity.
-                </strong>                          
-              </p>
-              <a class="listItemsURL" href="https://e-academia.ctcv.pt/moodle/" class="social-link">
-                CTCV Academia - Moodle
-              </a>
-              <br>
-              <hr>
-              <br>
-              <p class="projectText"> <b> The MOOCS contains the following developed features: : </b> </p>
-              <p class="projectTextItems">
-                - Educational videos created with AI avatars using HeyGen, including animated transitions between explanations to enhance student engagement.<br>
-                - Video editing and enhancement using CapCut, including promotional content and refinement of HeyGen-produced videos.<br>
-                - Customized Moodle environment with HTML, CSS, and JavaScript to create interactive elements such as buttons, dynamic actions, and embedded quizzes.<br>
-                - Designed quizzes to reinforce learning and help students grasp key concepts.<br>
-              </p>
-              <br><br>
-              <div class="slideshow-container">
-                <div class="mySlides_MOOCS fade">
-                  <div class="numbertext">1 / 5</div>
-                  <img src="./assets/images/mooc_principal.png" style="width:100%">
-                  <div class="text slide_text">Moodle</div>
-                </div>           
-
-                <div class="mySlides_MOOCS fade">
-                  <div class="numbertext">2 / 5</div>
-                  <img src="./assets/images/mooc_video1.png" style="width:100%">
-                  <div class="text slide_text">Video with AI</div>
-                </div>  
-
-                <div class="mySlides_MOOCS fade">
-                  <div class="numbertext">3 / 5</div>
-                  <img src="./assets/images/mooc_video2.png" style="width:100%">
-                  <div class="text slide_text">Video with AI</div>
-                </div>
-
-                <div class="mySlides_MOOCS fade">
-                  <div class="numbertext">4 / 5</div>
-                  <img src="./assets/images/mooc_quiz.png" style="width:100%">
-                  <div class="text slide_text">Quiz</div>
-                </div>
-
-                <div class="mySlides_MOOCS fade">
-                  <div class="numbertext">5 / 5</div>
-                  <img src="./assets/images/mooc_heygen.png" style="width:100%">
-                  <div class="text slide_text">Heygen</div>
-                </div>
-                
-                
-                <a class="prev" onclick="plusSlides(-1, 'MOOCS')">❮</a>
-                <a class="next" onclick="plusSlides(1, 'MOOCS')">❯</a>               
-              </div>
-              <br>
-              
-              <div style="text-align:center">
-                <span class="dot-mySlides_MOOCS dot" onclick="currentSlide(1, 'MOOCS')"></span> 
-                <span class="dot-mySlides_MOOCS dot" onclick="currentSlide(2, 'MOOCS')"></span> 
-                <span class="dot-mySlides_MOOCS dot" onclick="currentSlide(3, 'MOOCS')"></span> 
-                <span class="dot-mySlides_MOOCS dot" onclick="currentSlide(4, 'MOOCS')"></span> 
-                <span class="dot-mySlides_MOOCS dot" onclick="currentSlide(5, 'MOOCS')"></span> 
-              </div>
-            </div>
-
-
-
-
-
-            <!---------------------------------- CHATBOT AI ---------------------------------->
-            <div id="project-details-Chatbot" class="project-details-item" style="display: none;">
-              <a href="#" class="previous previousPortfolio">&laquo; Previous</a>
-
-              <h1 class="projectTextTitle">Chatbot AI</h1>
-              <p class="project-category project-category-detail">Web Development (HuggingFaces)</p>
-              <div class="centered-container">
-                <iframe class="full-width-iframe" src="https://www.youtube.com/embed/4JObRfYaDdQ?si=hUP1EEUREYGz1kQm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <br>
-              <p class="projectText" style="color: white">
-                <strong> 
-                  This project is an intelligent chatbot developed using Hugging Face technologies. 
-                  It is designed to answer students’ questions about a specific subject, making learning more interactive and accessible. 
-                  The chatbot can be seamlessly embedded into other websites, allowing easy integration into educational platforms, course pages, or institutional portals. </strong>                          
-              </p>
-              <a class="listItemsURL" href="https://huggingface.co/spaces/ValKnightX/ctcv-mooc" class="social-link">
-                Chatbot AI - MOOC
-              </a>
-              <br>
-              <hr>
-              <br>
-              <p class="projectText"> <b> The chatbot contains the following developed features: </b> </p>
-              <p class="projectTextItems">
-                - Answers course-specific questions posed by students<br>
-                - Text-to-speech functionality to enhance audio output<br>
-                - Speaking avatars that vocalize the answers (Lip-sync)<br>
-                - Quizzes with course-specific questions to help students learn more effectively<br>
-              </p>
-              <br><br>
-              <div class="slideshow-container">
-                <div class="mySlides_CHATBOT fade">
-                  <div class="numbertext">1 / 4</div>
-                  <img src="./assets/images/chatbot_text.png" style="width:100%">
-                  <div class="text slide_text">Chatbot Text</div>
-                </div>           
-
-                <div class="mySlides_CHATBOT fade">
-                  <div class="numbertext">2 / 4</div>
-                  <img src="./assets/images/chatbot_voice.png" style="width:100%">
-                  <div class="text slide_text">Chatbot text-to-speech</div>
-                </div>  
-
-                <div class="mySlides_CHATBOT fade">
-                  <div class="numbertext">3 / 4</div>
-                  <img src="./assets/images/chatbot_avatar.png" style="width:100%">
-                  <div class="text slide_text">Chatbot avatar (lip-sync)</div>
-                </div>
-
-                <div class="mySlides_CHATBOT fade">
-                  <div class="numbertext">4 / 4</div>
-                  <img src="./assets/images/chatbot_quiz.png" style="width:100%">
-                  <div class="text slide_text">Chatbot Quiz</div>
-                </div>
-                
-                
-                <a class="prev" onclick="plusSlides(-1, 'CHATBOT')">❮</a>
-                <a class="next" onclick="plusSlides(1, 'CHATBOT')">❯</a>               
-              </div>
-              <br>
-              
-              <div style="text-align:center">
-                <span class="dot-mySlides_CHATBOT dot" onclick="currentSlide(1, 'CHATBOT')"></span> 
-                <span class="dot-mySlides_CHATBOT dot" onclick="currentSlide(2, 'CHATBOT')"></span> 
-                <span class="dot-mySlides_CHATBOT dot" onclick="currentSlide(3, 'CHATBOT')"></span> 
-                <span class="dot-mySlides_CHATBOT dot" onclick="currentSlide(4, 'CHATBOT')"></span> 
-              </div>
-            </div>
-
-
-
-
-            <!---------------------------------- VIRTUALIZATION VR/AR ---------------------------------->
-            <div id="project-details-Virtualization" class="project-details-item" style="display: none;">
-              <a href="#" class="previous previousPortfolio">&laquo; Previous</a>
-
-              <h1 class="projectTextTitle">Industrinity AR <br>(in Development)</h1>
-              <p class="project-category project-category-detail">Unity 3D VR/AR</p>
-              <div class="centered-container">
-                <iframe class="full-width-iframe" src="https://www.youtube.com/embed/-xE9Z9KHJmo?si=6XoNYZbO_7QXGx7u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>!
-              <br>
-              <br>
-              <p class="projectText" style="color: white">
-                <strong>
-                  This project is a Digital Twin XR system, made in Unity and using Meta Quest 3, that enables users to interact with both virtual and real equipment through immersive technologies. By using VR/AR devices, users can control and monitor physical objects, train in virtual environments, and engage with real-world systems enhanced by virtual elements.
-                  The goal is to make working with real equipment easier, more intuitive, and efficient by providing guided tutorials, visual indicators, and interactive support.
-                </strong>                          
-              </p>
-              <br>
-              <hr>
-              <br>
-              <p class="projectText"> <b> This project contains the following development intregations:</b></p>
-              <p class="projectTextItems">
-                - <b>Virtual Reality (VR):</b> Allows users to safely learn how to operate industrial equipment through guided tutorials and Digital Twin simulations, enabling the exploration of “what-if” scenarios without the risk of real-world errors. <br>
-                - <b>Augmented Reality (AR):</b> Delivers real-time information and step-by-step guidance, helping users operate industrial equipment more efficiently by overlaying relevant data directly onto the physical environment. <br>
-                - <b>Firebase Integration:</b> Supports the storage and retrieval of user data, enabling personalized scenarios or improving the overall learning experience.
-              </p>
-              <br>
-              <p class="projectText"> <b> This project provides this current features: </b></p>
-              <p class="projectTextItems">
-                - Access to a dashboard containing categories and items. <br>
-                - Item selection with the ability to preview and customize elements in real time, including colors, text, images, and interface components. <br>
-                - Augmented Reality visualization, allowing items to be placed in the real world with the ability to move and resize them. <br>
-                - Item editing at any time, enabling quick adjustments during use. <br>
-                - Ability to return to the application and restore the scenario using spatial anchors. <br>
-                - Manipulation of industrial equipment with interactive panels in real time <br>
-                - Guided interaction step by step with visual indicators to assist users in operating the equipment effectively. (Future Development) <br>
-                - Audio messages and alerts for error or anomaly situations (Future Development)
-              </p>
-              <br><br>
-
-              <div class="slideshow-container">
-                <div class="mySlides_VIRTUALIZATION fade">
-                  <div class="numbertext">1 / 5</div>
-                  <img src="./assets/images/industrinity1.png" style="width:100%">
-                  <div class="text">Menu Panel</div>
-                </div>           
-
-                <div class="mySlides_VIRTUALIZATION fade">
-                  <div class="numbertext">2 / 5</div>
-                  <img src="./assets/images/industrinity2.png" style="width:100%">
-                  <div class="text">Menu Panel (Item "cube")</div>
-                </div>  
-
-                <div class="mySlides_VIRTUALIZATION fade">
-                  <div class="numbertext">3 / 5</div>
-                  <img src="./assets/images/industrinity3.png" style="width:100%">
-                  <div class="text">Managing item into the world scene</div>
-                </div>
-
-                <div class="mySlides_VIRTUALIZATION fade">
-                  <div class="numbertext">4 / 5</div>
-                  <img src="./assets/images/industrinity5.png" style="width:100%">
-                  <div class="text">Managing item into the world scene</div>
-                </div>
-
-                <div class="mySlides_VIRTUALIZATION fade">
-                  <div class="numbertext">5 / 5</div>
-                  <img src="./assets/images/industrinity6.png" style="width:100%">
-                  <div class="text">Interactive Panel of the industrial equipment</div>
-                </div>
-                
-                
-                <a class="prev" onclick="plusSlides(-1, 'VIRTUALIZATION')">❮</a>
-                <a class="next" onclick="plusSlides(1, 'VIRTUALIZATION')">❯</a>               
-              </div>
-              <br>
-              
-              <div style="text-align:center">
-                <span class="dot-mySlides_VIRTUALIZATION dot" onclick="currentSlide(1, 'VIRTUALIZATION')"></span> 
-                <span class="dot-mySlides_VIRTUALIZATION dot" onclick="currentSlide(2, 'VIRTUALIZATION')"></span> 
-                <span class="dot-mySlides_VIRTUALIZATION dot" onclick="currentSlide(3, 'VIRTUALIZATION')"></span> 
-                <span class="dot-mySlides_VIRTUALIZATION dot" onclick="currentSlide(4, 'VIRTUALIZATION')"></span> 
-                <span class="dot-mySlides_VIRTUALIZATION dot" onclick="currentSlide(5, 'VIRTUALIZATION')"></span> 
-              </div>
-            </div>
-          </div>
-        </div>
-        </section>
-      </article>
     </div>
-  </main>
+  </nav>
 
-  <!--
-    - custom js link
-  -->
+  <section id="hero" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Always learning & building with creativity</div>
+      <h1 class="hero-title">Carlos Costa</h1>
+        <p class="hero-subtitle">Software & Multimedia Developer</p>
+        <p class="hero-desc">XR, Game & Interactive Systems</p>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+      <div class="hero-social">
+        <a href="https://www.linkedin.com/in/carloscosta99/" target="_blank" aria-label="LinkedIn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://github.com/CcostaX" target="_blank" aria-label="GitHub">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"> <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.754-1.333-1.754 -1.089-.744.084-.729.084-.729 1.205.084 1.839 1.236 1.839 1.236 1.07 1.835 2.809 1.305 3.495.998 .108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22 -.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23A11.52 11.52 0 0112 6.844 c1.02.005 2.045.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176 .77.84 1.233 1.91 1.233 3.22 0 4.61-2.804 5.625-5.475 5.92.43.372.814 1.103.814 2.222 0 1.606-.015 2.898-.015 3.293 0 .321.216.694.825.576C20.565 21.795 24 17.295 24 12 24 5.37 18.627 0 12 0z"/> </svg>
+        </a>
+        <a href="https://ccostax.itch.io/" target="_blank" aria-label="Itch.io">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M11.952 0C6.131 0 1.14 3.845.165 9.6h2.363C3.18 5.867 7.248 3.12 11.952 3.12c4.704 0 8.773 2.746 9.425 6.48h2.363C22.766 3.845 17.774 0 11.952 0zM6.048 6c-2.243 0-4.267.99-5.616 2.544l-.432.48.792-.744.288.72C2.49 11.635 4.502 13.2 6.816 13.2c3.136 0 5.664-2.304 5.664-5.136 0-.336-.048-.672-.144-.984a.744.744 0 01.72.624c.384 2.256 2.352 3.96 4.656 3.96 1.272 0 2.448-.48 3.36-1.296 0 0-2.592 7.752-9.12 7.752-4.92 0-8.952-3.984-8.952-8.88 0-.624.072-1.248.192-1.84H6.048z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <div class="about-image-frame">
+            <img src="./assets/images/me.jpg" alt="Carlos Costa">
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <p>Computer Engineer with over 3 years of experience in XR (VR/AR/MR), web and mobile application development, and AI-assisted technologies. Worked on XR applications, digital twin solutions, and interactive learning platforms combining software development with multimedia production.</p>
+          <p>Passionate about immersive technologies, game development, and video production. I hold a Bachelor's degree in Computer Engineering and a Master's degree in Computer Engineering with a focus on Mobile Computing.</p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-number" data-target="3" data-suffix="+">0</span>
+              <span class="highlight-label">Years Experience</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-number" data-target="15" data-suffix="+">0</span>
+              <span class="highlight-label">Projects Done</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-number" data-target="2" data-suffix="">0</span>
+              <span class="highlight-label">Papers Published</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>XR (VR/AR/MR) Developer</h3>
+          <p>Development of augmented and virtual reality applications for enhanced workplace training, Digital Twin XR systems enabling interaction with virtual and real equipment through VR/AR glasses.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+          </div>
+          <h3>Video Editor</h3>
+          <p>Creation of presentation videos, AI-enhanced content (avatars, animated text), product demonstrations, and promotional materials using Capcut, Vegas Pro, Davinci Resolve, and After Effects.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+          </div>
+          <h3>Web Developer</h3>
+          <p>Design and development of custom MOOCs with videos and quizzes, AI chatbots with text-to-speech and speaking avatars, full-stack applications using Vue.js, PHP, and websockets.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6.5" y1="6.5" x2="17.5" y2="17.5"/><line x1="6.5" y1="17.5" x2="17.5" y2="6.5"/><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <h3>Game Development</h3>
+          <p>Games using Unity for PC and mobile, including 2D/3D, multiplayer, serious games, and augmented reality.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Resume</span>
+        <h2 class="section-title">Experience & Education</h2>
+      </div>
+      <div class="resume-grid">
+        <div class="resume-column">
+          <h3 class="resume-column-title">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            Experience
+          </h3>
+          <div class="timeline">
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">January 2025 - Present</span>
+                <h4>Software and Multimedia Developer</h4>
+                <p class="timeline-org">CTCV - Centro Tecnológico da Cerâmica e do Vidro</p>
+                <p class="timeline-desc"><strong>Roles:</strong> XR (VR/AR/MR) Developer | Video Editor | Web Developer</p>
+              </div>
+            </div>
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">October 2024 (1 month)</span>
+                <h4>Game Developer</h4>
+                <p class="timeline-org">ONTOP Studios</p>
+                <p class="timeline-desc"><strong>Roles:</strong> AR Web & Mobile Games Developer – Niantic (8th Wall)</p>
+              </div>
+            </div>
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2022 — 2024 (2 years)</span>
+                <h4>Research Fellow</h4>
+                <p class="timeline-org">Polytechnic University of Leiria - ESTG</p>
+                <p class="timeline-desc"><strong>Roles:</strong> AR & Digital Twin Mobile Developer</p>
+                <p class="timeline-desc"><strong>Project:</strong> DBoidS - Digital twin Boids fire prevention System <a href="https://sciproj.ptcris.pt/171663PRJ" target="_blank">10.54499/PTDC/CCI-COM/2416/2021</a></p>
+                <p class="timeline-desc"><strong>Papers:</strong> <a href="https://link.springer.com/article/10.1007/s10055-025-01145-w" target="_blank">Springer Link</a> and <a href="https://ieeexplore.ieee.org/document/11474812" target="_blank">IEEE Xplore</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="resume-column">
+          <h3 class="resume-column-title">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            Education
+          </h3>
+          <div class="timeline">
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2022 — 2024</span>
+                <h4>Master's Degree in Computer Engineering – Mobile Computing</h4>
+                <p class="timeline-org">Polytechnic University of Leiria - ESTG</p>
+                <p class="timeline-desc">Final Grade: 18/20 | Thesis Grade: 18/20</p>
+                <p class="timeline-desc"><strong>Paper:</strong> <a href="https://link.springer.com/article/10.1007/s10055-025-01145-w" target="_blank">AR mobile digital twin for UAV wildfire prevention</a></p>
+              </div>
+            </div>
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2019 — 2022</span>
+                <h4>Bachelor's Degree in Computer Engineering</h4>
+                <p class="timeline-org">Polytechnic University of Leiria - ESTG</p>
+                <p class="timeline-desc">Final Grade: 15/20 | Project Grade: 18/20</p>
+                <p class="timeline-desc"><strong>Paper:</strong> <a href="https://ieeexplore.ieee.org/document/10452716" target="_blank">Defend Your Castle – AR Multiplayer Game</a></p>
+              </div>
+            </div>
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2017 — 2019</span>
+                <h4>TESP - Information Systems Programming</h4>
+                <p class="timeline-org">Polytechnic University of Leiria - ESTG</p>
+                <p class="timeline-desc">Final Grade: 15/20 | Internship at InCentea: 18/20</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <h3>XR and Game development</h3>
+          <p>Unity (2D/3D), Unity Multiplayer (Photon, Relay), Niantic Studio (8th Wall), AR (Vuforia, ARCore), VR/AR (Meta Quest 3)</p>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Image & Video Editing</h3>
+          <p>Gimp (Photoshop), Capcut, Vegas Pro, Davinci Resolve, Adobe After Effects</p>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Web Development</h3>
+          <p>HTML, CSS, JavaScript, PHP, TypeScript, Vue.js, Websockets, SQL</p>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Programming</h3>
+          <p>Java, JavaScript, C, C#, Python</p>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Development Tools</h3>
+          <p>Visual Studio, VS Code, Eclipse</p>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Version Control</h3>
+          <p>Git</p>
+        </div>
+      </div>
+
+      <div class="section-header reveal" style="margin-top: 80px;">
+        <h2 class="section-title">Language Skills</h2>
+      </div>
+      <div class="table-wrapper reveal">
+        <table class="lang-table">
+          <thead>
+            <tr>
+              <th>Languages</th>
+              <th>Listening</th>
+              <th>Reading</th>
+              <th>Speaking</th>
+              <th>Interaction</th>
+              <th>Writing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Portuguese</td>
+              <td><span class="">C2 (or Native)</span></td>
+              <td><span class="">C2 (or Native)</span></td>
+              <td><span class="">C2 (or Native)</span></td>
+              <td><span class="">C2 (or Native)</span></td>
+              <td><span class="">C2 (or Native)</span></td>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td><span class="">C1</span></td>
+              <td><span class="">C1</span></td>
+              <td><span class="">C1</span></td>
+              <td><span class="">C1</span></td>
+              <td><span class="">C1</span></td>
+            </tr>
+            <tr>
+              <td>French</td>
+              <td><span class="">A1</span></td>
+              <td><span class="">A1+</span></td>
+              <td><span class="">A1+</span></td>
+              <td><span class="">A1</span></td>
+              <td><span class="">A1</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="driver-license reveal">Driver License: B and B1</p>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Portfolio Projects</h2>
+      </div>
+
+      <div class="project-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="vr/ar projects">VR/AR Projects</button>
+        <button class="filter-btn" data-filter="game development">Game Development</button>
+        <button class="filter-btn" data-filter="ai projects">AI Projects</button>
+        <button class="filter-btn" data-filter="fullstack / web apps">FullStack / Web Apps</button>
+        <button class="filter-btn" data-filter="video creator">Video Creator</button>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+      </div>
+    </div>
+  </section>
+
+  <div class="project-modal" id="projectModal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info-section reveal">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">Email</p>
+              <a href="mailto:carlos.cost142@gmail.com" class="contact-value">carlos.cost142@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">Phone</p>
+              <a href="tel:+351919495155" class="contact-value">+351 919495155</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">Location</p>
+              <p class="contact-value">Coimbra / Lisbon / Leiria, Portugal</p>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a href="https://www.linkedin.com/in/carloscosta99/" target="_blank" class="social-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://github.com/CcostaX" target="_blank" class="social-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"> <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.754-1.333-1.754 -1.089-.744.084-.729.084-.729 1.205.084 1.839 1.236 1.839 1.236 1.07 1.835 2.809 1.305 3.495.998 .108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22 -.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23A11.52 11.52 0 0112 6.844 c1.02.005 2.045.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176 .77.84 1.233 1.91 1.233 3.22 0 4.61-2.804 5.625-5.475 5.92.43.372.814 1.103.814 2.222 0 1.606-.015 2.898-.015 3.293 0 .321.216.694.825.576C20.565 21.795 24 17.295 24 12 24 5.37 18.627 0 12 0z"/> </svg>
+            </a>
+            <a href="https://ccostax.itch.io/" target="_blank" class="social-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.952 0C6.131 0 1.14 3.845.165 9.6h2.363C3.18 5.867 7.248 3.12 11.952 3.12c4.704 0 8.773 2.746 9.425 6.48h2.363C22.766 3.845 17.774 0 11.952 0zM6.048 6c-2.243 0-4.267.99-5.616 2.544l-.432.48.792-.744.288.72C2.49 11.635 4.502 13.2 6.816 13.2c3.136 0 5.664-2.304 5.664-5.136 0-.336-.048-.672-.144-.984a.744.744 0 01.72.624c.384 2.256 2.352 3.96 4.656 3.96 1.272 0 2.448-.48 3.36-1.296 0 0-2.592 7.752-9.12 7.752-4.92 0-8.952-3.984-8.952-8.88 0-.624.072-1.248.192-1.84H6.048z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-section reveal">
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/xlgvkdog" method="POST">
+            <div class="form-row">
+              <input type="text" name="name" placeholder="Your Name" class="form-input" required>
+              <input type="email" name="email" placeholder="Your Email" class="form-input" required>
+            </div>
+            <input type="text" name="subject" placeholder="Subject" class="form-input" required>
+            <textarea name="message" placeholder="Your Message" class="form-input" rows="5" required></textarea>
+            <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Carlos Costa. Built with care.</p>
+    </div>
+  </footer>
+
   <script src="./assets/js/script.js"></script>
-  <script src="./assets/js/slide.js"></script>
-  <script src="./assets/js/localStorage.js"></script>
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
-
 </html>
